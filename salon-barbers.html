@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Silky Touch Barbers — SilkyTouch</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section class="salon-hero">
+     <img class="salon-logo" src="images/logo3.jpg" alt="Silky Touch Barbers logo">  
+  <a href="index.html" class="back-link">&larr; Home</a>
+  <h1>Silky Touch Barbers</h1>
+  <p class="salon-address">Boulders Shopping Centre, Old Pretoria &amp; Tonetti St, Rds, Midrand, 1682</p>
+  <div class="hero-actions">
+    <a href="barbers-booking.html" class="btn-primary" style="text-decoration:none;">Book appointment</a>
+    <a href="barbers-bundles.html" class="btn-secondary">Bundle packages</a>
+    <a href="barbers-gallery.html" class="btn-secondary">Gallery / Inspo</a>
+  </div>
+</section>
+
+<div class="service-section" id="serviceList">
+  <p class="section-label" style="margin-top:1rem;">Services</p>
+
+  <div class="service-row" onclick="toggleDropdown('menscut-dropdown')" style="cursor:pointer;">
+      <div><p class="service-name">Men's cut</p><p class="service-price">R80</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="menscut-dropdown">
+      <div class="service-detail-images">
+          <img src="images/cutandbeard.jpg" alt="Men's cut 1">
+          <img src="images/kid2.jpg" alt="Men's cut 2">
+          <img src="images/cutandbleach.jpg" alt="Men's cut 3">
+      </div>
+      <div class="info-pills">
+          <span class="info-pill">⏱ 20–30 min</span>
+          <span class="info-pill">💰 R80</span>
+      </div>
+      <p class="service-description">
+          A classic, clean men's haircut tailored to your preferred style and length. Includes a straight-razor edge finish for a sharp, precise line. A reliable go-to for keeping your look fresh.
+      </p>
+      <a href="barbers-booking.html" class="btn-primary" style="text-decoration:none;">Book appointment</a>
+  </div>
+
+  <div class="service-row" onclick="toggleDropdown('ladiescut-dropdown')" style="cursor:pointer;">
+      <div><p class="service-name">Ladies' cut</p><p class="service-price">R80</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="ladiescut-dropdown">
+      <div class="service-detail-images">
+          <img src="images/Ladiescut2.jpg" alt="Ladies' cut 1">
+          <img src="images/scurlunisex.jpeg" alt="Ladies' cut 2">
+          <img src="images/scurluni2.jpeg" alt="Ladies' cut 3">
+      </div>
+      <div class="info-pills">
+          <span class="info-pill">⏱ 25–35 min</span>
+          <span class="info-pill">💰 R80</span>
+      </div>
+      <p class="service-description">
+          A precision cut styled to suit your face shape and hair type, finished with a wash and blow-dry for a polished result.
+      </p>
+      <a href="barbers-booking.html" class="btn-primary" style="text-decoration:none;">Book appointment</a>
+  </div>
+
+  <div class="service-row" onclick="toggleDropdown('kidscut-dropdown')" style="cursor:pointer;">
+      <div><p class="service-name">Kids' cut</p><p class="service-price">R70</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="kidscut-dropdown">
+      <div class="service-detail-images">
+          <img src="images/kids.jpg" alt="Kids' cut 1">
+          <img src="images/kid2.jpg" alt="Kids' cut 2">
+          <img src="images/kid4.jpg" alt="Kids' cut 3">
+      </div>
+      <div class="info-pills">
+          <span class="info-pill">⏱ 15–20 min</span>
+          <span class="info-pill">💰 R70</span>
+      </div>
+      <p class="service-description">
+          A quick, comfortable haircut for kids, done with patience and care to keep the experience easy and stress-free.
+      </p>
+      <a href="barbers-booking.html" class="btn-primary" style="text-decoration:none;">Book appointment</a>
+  </div>
+
+  <div class="service-row" onclick="toggleDropdown('shavingpowder-dropdown')" style="cursor:pointer;">
+      <div><p class="service-name">Shaving powder</p><p class="service-price">R100</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="shavingpowder-dropdown">
+      <div class="service-detail-images">
+          <img src="images/shavingpowder.jpg" alt="Shaving powder 1">
+          
+      </div>
+      <div class="info-pills">
+          <span class="info-pill">⏱ 15–20 min</span>
+          <span class="info-pill">💰 R100</span>
+      </div>
+      <p class="service-description">
+          A gentle depilatory powder treatment for a smooth, close finish without a traditional blade — a comfortable option for sensitive skin.
+      </p>
+      <button class="book-now-pulse">Book now</button>
+  </div>
+
+  <div class="service-row" onclick="toggleDropdown('shavetrim-dropdown')" style="cursor:pointer;">
+      <div><p class="service-name">Shave or trim</p><p class="service-price">R40</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="shavetrim-dropdown">
+      <div class="service-detail-images">
+          <img src="images/trim.jpg" alt="Shave or trim 1">
+          <img src="images/trim2.jpg" alt="Shave or trim 2">
+          <img src="images/trim3.jpg" alt="Shave or trim 3">
+      </div>
+      <div class="info-pills">
+          <span class="info-pill">⏱ 10–15 min</span>
+          <span class="info-pill">💰 R40</span>
+      </div>
+      <p class="service-description">
+          A quick beard shave or trim to keep your facial hair neat and sharp between full grooming sessions.
+      </p>
+      <a href="barbers-booking.html" class="btn-primary" style="text-decoration:none;">Book appointment</a>
+  </div>
+
+  <div class="service-row" onclick="toggleDropdown('cutblackdye-dropdown')" style="cursor:pointer;">
+      <div><p class="service-name">Cut and black dye</p><p class="service-price">R180</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="cutblackdye-dropdown">
+      <div class="service-detail-images">
+          <img src="images/cutanddye.jpg" alt="Cut and black dye 1">
+          <img src="images/cutandbeard.jpg" alt="Cut and black dye 2">
+          <img src="images/haircutandbeard.jpg" alt="Cut and black dye 3">
+      </div>
+      <div class="info-pills">
+          <span class="info-pill">⏱ 50–60 min</span>
+          <span class="info-pill">💰 R180</span>
+      </div>
+      <p class="service-description">
+          A fresh cut paired with a deep black dye for full, even coverage — ideal for covering grey or refreshing your natural colour with a clean finish.
+      </p>
+      <a href="barbers-booking.html" class="btn-primary" style="text-decoration:none;">Book appointment</a>
+  </div>
+
+  <div class="service-row" onclick="toggleDropdown('cutbleach-dropdown')" style="cursor:pointer;">
+      <div><p class="service-name">Cut and bleach / colour</p><p class="service-price">R250</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="cutbleach-dropdown">
+      <div class="service-detail-images">
+          <img src="images/haircut4.jpg" alt="Cut and bleach 1">
+          <img src="images/cutandbleach.jpg" alt="Cut and bleach 2">
+          <img src="images/colourdye.jpeg" alt="Cut and bleach 3">
+      </div>
+      <div class="info-pills">
+          <span class="info-pill">⏱ 60–75 min</span>
+          <span class="info-pill">💰 R250</span>
+      </div>
+      <p class="service-description">
+          A cut finished with a bold bleach or colour treatment for a striking change of style. Includes a strand test where needed to protect hair condition.
+      </p>
+      <a href="barbers-booking.html" class="btn-primary" style="text-decoration:none;">Book appointment</a>
+  </div>
+
+  <div class="service-row" onclick="toggleDropdown('cutgreycolour-dropdown')" style="cursor:pointer;">
+      <div><p class="service-name">Cut and grey colour</p><p class="service-price">R300</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="cutgreycolour-dropdown">
+      <div class="service-detail-images">
+          <img src="images/grey-hair.jpg" alt="Cut and grey colour 1">
+          <img src="images/haircut4.jpg" alt="Cut and grey colour 2">
+          <img src="images/colourdye.jpeg" alt="Cut and grey colour 3">
+      </div>
+      <div class="info-pills">
+          <span class="info-pill">⏱ 60–75 min</span>
+          <span class="info-pill">💰 R300</span>
+      </div>
+      <p class="service-description">
+          A modern grey colour treatment paired with a fresh cut for a distinctive, on-trend look with even, salt-and-pepper style coverage.
+      </p>
+      <a href="barbers-booking.html" class="btn-primary" style="text-decoration:none;">Book appointment</a>
+  </div>
+
+  <div class="service-row" onclick="toggleDropdown('cutscurl-dropdown')" style="cursor:pointer;">
+      <div><p class="service-name">Cut and S-curl</p><p class="service-price">R250</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="cutscurl-dropdown">
+      <div class="service-detail-images">
+          <img src="images/scurlunisex.jpeg" alt="Cut and S-curl 1">
+          <img src="images/scurluni2.jpeg" alt="Cut and S-curl 2">
+          <img src="images/scurl3.jpg" alt="Cut and S-curl 3">
+      </div>
+      <div class="info-pills">
+          <span class="info-pill">⏱ 60–90 min</span>
+          <span class="info-pill">💰 R250</span>
+      </div>
+      <p class="service-description">
+          A cut combined with an S-curl treatment for soft, defined curls and added texture — a great option for a low-maintenance, natural-looking style.
+      </p>
+      <a href="barbers-booking.html" class="btn-primary" style="text-decoration:none;">Book appointment</a>
+  </div>
+
+  <div class="service-row" onclick="toggleDropdown('blackdyeonly-dropdown')" style="cursor:pointer;">
+      <div><p class="service-name">Black dye only</p><p class="service-price">R150</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="blackdyeonly-dropdown">
+      <div class="service-detail-images">
+          <img src="images/haircutandbeard.jpg" alt="Black dye only 1">
+          <img src="images/cutandbeard.jpg" alt="Black dye only 2">
+          <img src="images/haircutandbeard.jpg" alt="Black dye only 3">
+      </div>
+      <div class="info-pills">
+          <span class="info-pill">⏱ 30–40 min</span>
+          <span class="info-pill">💰 R150</span>
+      </div>
+      <p class="service-description">
+          A black dye application without a haircut, ideal for touching up roots or refreshing colour between full appointments.
+      </p>
+      <a href="barbers-booking.html" class="btn-primary" style="text-decoration:none;">Book appointment</a>
+  </div>
+
+  <div class="service-row" onclick="toggleDropdown('scurlonly-dropdown')" style="cursor:pointer;">
+      <div><p class="service-name">S-curl only</p><p class="service-price">R180</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="scurlonly-dropdown">
+      <div class="service-detail-images">
+          <img src="images/scurluni2.jpeg" alt="S-curl only 1">
+          <img src="images/scurl3.jpg" alt="S-curl only 2">
+          <img src="images/scurlunisex.jpeg" alt="S-curl only 3">
+      </div>
+      <div class="info-pills">
+          <span class="info-pill">⏱ 45–60 min</span>
+          <span class="info-pill">💰 R180</span>
+      </div>
+      <p class="service-description">
+          An S-curl treatment on its own, giving soft natural-looking curls without a fresh cut — perfect for refreshing an existing style.
+      </p>
+      <a href="barbers-booking.html" class="btn-primary" style="text-decoration:none;">Book appointment</a>
+  </div>
+
+  <div class="service-row" onclick="toggleDropdown('cutbeardblackdye-dropdown')" style="cursor:pointer;">
+      <div><p class="service-name">Cut and beard black dye</p><p class="service-price">R200</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="cutbeardblackdye-dropdown">
+      <div class="service-detail-images">
+          <img src="images/cutandbeard.jpg" alt="Cut and beard black dye 1">
+          <img src="images/haircutandbeard.jpg" alt="Cut and beard black dye 2">
+          <img src="images/cutandbleach.jpg" alt="Cut and beard black dye 3">
+      </div>
+      <div class="info-pills">
+          <span class="info-pill">⏱ 60 min</span>
+          <span class="info-pill">💰 R200</span>
+      </div>
+      <p class="service-description">
+          A full cut combined with a black dye treatment for both hair and beard, giving a sharp, uniform, well-groomed finish.
+      </p>
+      <a href="barbers-booking.html" class="btn-primary" style="text-decoration:none;">Book appointment</a>
+  </div>
+
+
+
+<script src="script.js"></script>
+</body>
+</html>

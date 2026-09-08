@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yisu Beauty</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section class="salon-hero">
+  <img class="salon-logo" src="images/logo.jpg" alt="Yisu Beauty logo">
+  <a href="index.html" class="back-link">&larr; Home</a>
+  <h1>Yisu Beauty</h1>
+  <p class="salon-address">1489 Blueberry St, Honeydew, Johannesburg, 2040</p>
+  <div class="hero-actions">
+    <a href="yisu-booking.html" class="btn-primary" style="text-decoration:none;">Book appointment</a>
+    <a href="yisu-beauty-bundles.html" class="btn-secondary">Bundle packages</a>
+    <a href="yisu-beauty-gallery.html" class="btn-secondary">Gallery / Inspo</a>
+  </div>
+</section>
+
+<div class="category-tabs">
+  <button class="tab active" data-category="hair">Hair</button>
+  <button class="tab" data-category="haircut">Haircut</button>
+  <button class="tab" data-category="mizani">Mizani</button>
+  <button class="tab" data-category="nails">Nails</button>
+  <button class="tab" data-category="lashes">Lashes</button>
+  <button class="tab" data-category="dreadlocks">Dreadlocks</button>
+  <button class="tab" data-category="makeup">Makeup</button>
+</div>
+
+<div class="service-section" id="serviceList">
+
+  <!-- Hair -->
+
+  <div class="service-row" data-category="hair" onclick="toggleDropdown('straightupmj-dropdown')" style="cursor:pointer;">
+      <div><p class="service-name">Straight up</p><p class="service-price">R350</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="straightupmj-dropdown" data-category="hair">
+      <div class="service-detail-images">
+          <img src="images/straightup1.jpg" alt="Straight up 1">
+          <img src="images/straightup2.jpg" alt="Straight up 2">
+          <img src="images/straightup3.jpg" alt="Straight up 3">
+      </div>
+      <div class="info-pills">
+          <span class="info-pill">⏱ 3–4 hours</span>
+          <span class="info-pill">💰 R350</span>
+      </div>
+      <p class="service-description">Braids styled straight upward for a bold, clean look that keeps hair off the face and neck.</p>
+      <a href="yisu-booking.html" class="btn-primary" style="text-decoration:none;">Book appointment</a>
+  </div>
+
+  <div class="service-row" data-category="hair" onclick="toggleDropdown('knotless-dropdown')" style="cursor:pointer;">
+      <div><p class="service-name">Knotless</p><p class="service-price">R600</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="knotless-dropdown" data-category="hair">
+      <div class="service-detail-images">
+          <img src="images/knotless1.jpg" alt="Knotless 1">
+          <img src="images/knotless2.jpg" alt="Knotless 2">
+          <img src="images/knotless3.jpg" alt="Knotless 3">
+      </div>
+      <div class="info-pills">
+          <span class="info-pill">⏱ 4–6 hours</span>
+          <span class="info-pill">💰 R600</span>
+      </div>
+      <p class="service-description">Knotless braids start with your own hair before gradually feeding in extensions, so there's no tight knot at the root — less tension, less scalp discomfort, and a natural, long-lasting finish.</p>
+        <a href="yisu-booking.html" class="btn-primary" style="text-decoration:none;">Book appointment</a>
+  </div>
+
+  <div class="service-row" data-category="hair" onclick="toggleDropdown('singlesmj-dropdown')" style="cursor:pointer;">
+      <div><p class="service-name">Singles</p><p class="service-price">R400</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="singlesmj-dropdown" data-category="hair">
+      <div class="service-detail-images">
+          <img src="images/singles1.jpg" alt="Singles 1">
+          <img src="images/singles2.jpg" alt="Singles 2">
+          <img src="images/single-box.jpg" alt="Singles 3">
+      </div>
+      <div class="info-pills">
+          <span class="info-pill">⏱ 3–5 hours</span>
+          <span class="info-pill">💰 R400</span>
+      </div>
+      <p class="service-description">Fine, individual braids for a versatile style that works straight down, in updos, or half-up.</p>
+      <a href="yisu-booking.html" class="btn-primary" style="text-decoration:none;">Book appointment</a>
+  </div>
+
+  <div class="service-row" data-category="hair" onclick="toggleDropdown('straightbackmj-dropdown')" style="cursor:pointer;">
+      <div><p class="service-name">Straight back</p><p class="service-price">R300</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="straightbackmj-dropdown" data-category="hair">
+      <div class="service-detail-images">
+          <img src="images/straightback1.jpg" alt="Straight back 1">
+          <img src="images/straightback2.jpg" alt="Straight back 2">
+          <img src="images/straightback4.jpg" alt="Straight back 3">
+      </div>
+      <div class="info-pills">
+          <span class="info-pill">⏱ 1.5–2.5 hours</span>
+          <span class="info-pill">💰 R300</span>
+      </div>
+      <p class="service-description">Sleek cornrows braided straight back for a neat, low-maintenance style.</p>
+      <a href="yisu-booking.html" class="btn-primary" style="text-decoration:none;">Book appointment</a>
+  </div>
+
+  <div class="service-row" data-category="hair" onclick="toggleDropdown('removalsingles-dropdown')" style="cursor:pointer;">
+      <div><p class="service-name">Removal singles</p><p class="service-price">R100</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="removalsingles-dropdown" data-category="hair">
+      <div class="info-pills">
+          <span class="info-pill">⏱ 45–60 min</span>
+          <span class="info-pill">💰 R100</span>
+      </div>
+      <p class="service-description">Careful, gentle removal of your braided style to protect your natural hair underneath.</p>
+      <a href="yisu-booking.html" class="btn-primary" style="text-decoration:none;">Book appointment</a>
+  </div>
+
+  <div class="service-row" data-category="hair" onclick="toggleDropdown('cornrowremoval-dropdown')" style="cursor:pointer;">
+      <div><p class="service-name">Cornrow removal</p><p class="service-price">R80</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="cornrowremoval-dropdown" data-category="hair">
+      <div class="info-pills">
+          <span class="info-pill">⏱ 30–40 min</span>
+          <span class="info-pill">💰 R80</span>
+      </div>
+      <p class="service-description">Gentle removal of cornrows, taking care to protect your scalp and hairline.</p>
+      <a href="yisu-booking.html" class="btn-primary" style="text-decoration:none;">Book appointment</a>
+  </div>
+
+  <div class="service-row" data-category="hair" onclick="toggleDropdown('twistmj-dropdown')" style="cursor:pointer;">
+      <div><p class="service-name">Twist</p><p class="service-price">R600</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="twistmj-dropdown" data-category="hair">
+      <div class="service-detail-images">
+          <img src="images/twist1.jpg" alt="Twist 1">
+          <img src="images/twist2.jpg" alt="Twist 2">
+          <img src="images/twist3.jpg" alt="Twist 3">
+      </div>
+      <div class="info-pills">
+          <span class="info-pill">⏱ 3–4 hours</span>
+          <span class="info-pill">💰 R600</span>
+      </div>
+      <p class="service-description">Defined twists for a textured, natural look that holds well with minimal daily upkeep.</p>
+      <a href="yisu-booking.html" class="btn-primary" style="text-decoration:none;">Book appointment</a>
+  </div>
+
+  <div class="service-row" data-category="hair" onclick="toggleDropdown('twostepslong-dropdown')" style="cursor:pointer;">
+      <div><p class="service-name">Two steps (long)</p><p class="service-price">R600</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="twostepslong-dropdown" data-category="hair">
+      <div class="service-detail-images">
+          <img src="images/2-step-braids 2.jpg" alt="Two steps long  1">
+          <img src="images/twostepL1.jpg" alt="Two steps long  2">
+          <img src="images/twostepL2.jpg" alt="Two steps long  3">
+      </div>
+      <div class="info-pills">
+          <span class="info-pill">⏱ 4–5 hours</span>
+          <span class="info-pill">💰 R600</span>
+      </div>
+      <p class="service-description">A two-step braiding technique in a longer length, combining texture and length for a layered finish.</p>
+      <a href="yisu-booking.html" class="btn-primary" style="text-decoration:none;">Book appointment</a>
+  </div>
+
+  <div class="service-row" data-category="hair" onclick="toggleDropdown('twostepsshort-dropdown')" style="cursor:pointer;">
+      <div><p class="service-name">Two steps (short)</p><p class="service-price">R500</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="twostepsshort-dropdown" data-category="hair">
+      <div class="service-detail-images">
+          <img src="images/twostepshort1.jpg" alt="Two steps short 1">
+          <img src="images/twostepshort2.jpg" alt="Two steps short 2">
+          <img src="images/twostepshort3.jpg" alt="Two steps short 3">
+      </div>
+      <div class="info-pills">
+          <span class="info-pill">⏱ 3–4 hours</span>
+          <span class="info-pill">💰 R500</span>
+      </div>
+      <p class="service-description">A shorter version of the two-step technique — quicker to complete while keeping the same layered texture.</p>
+      <a href="yisu-booking.html" class="btn-primary" style="text-decoration:none;">Book appointment</a>
+  </div>
+
+  <div class="service-row" data-category="hair" onclick="toggleDropdown('boxbraidslong-dropdown')" style="cursor:pointer;">
+      <div><p class="service-name">Box braids (long)</p><p class="service-price">R500</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="boxbraidslong-dropdown" data-category="hair">
+      <div class="service-detail-images">
+          <img src="images/single-box.jpg" alt="Box braids 1">
+          <img src="images/boxbraids1.jpg" alt="Box braids 2">
+          <img src="images/singles2.jpg" alt="Box braids   3">
+      </div>
+      <div class="info-pills">
+          <span class="info-pill">⏱ 4–6 hours</span>
+          <span class="info-pill">💰 R500</span>
+      </div>
+      <p class="service-description">Classic long box braids for a bold, long-lasting protective style.</p>
+      <a href="yisu-booking.html" class="btn-primary" style="text-decoration:none;">Book appointment</a>
+  </div>
+
+  <div class="service-row" data-category="hair" onclick="toggleDropdown('pondo-dropdown')" style="cursor:pointer;">
+      <div><p class="service-name">Pondo</p><p class="service-price">R250</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="pondo-dropdown" data-category="hair">
+      <div class="service-detail-images">
+          <img src="images/pondo1.jpg" alt="Pondo 1">
+          <img src="images/pondo2.jpg" alt="Pondo 2">
+          <img src="images/pondo3.jpg" alt="Pondo 3">
+      </div>
+      <div class="info-pills">
+          <span class="info-pill">⏱ 2–3 hours</span>
+          <span class="info-pill">💰 R250</span>
+      </div>
+      <p class="service-description">A neat pondo style, quick to install with a smart, tidy finish.</p>
+      <a href="yisu-booking.html" class="btn-primary" style="text-decoration:none;">Book appointment</a>
+  </div>
+
+  <div class="service-row" data-category="hair" onclick="toggleDropdown('installationmj-dropdown')" style="cursor:pointer;">
+      <div><p class="service-name">Installation</p><p class="service-price">R400</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="installationmj-dropdown" data-category="hair">
+      <div class="service-detail-images">
+          <img src="images/installation1.jpg" alt="Installation 1">
+          <img src="images/installation2.jpg" alt="Installation 2">
+          <img src="images/installation3.jpg" alt="Installation 3">
+      </div>
+      <div class="info-pills">
+          <span class="info-pill">⏱ 1.5–2 hours</span>
+          <span class="info-pill">💰 R400</span>
+      </div>
+      <p class="service-description">Secure wig or hairpiece installation fitted to your hairline for a natural, long-lasting result.</p>
+      <a href="yisu-booking.html" class="btn-primary" style="text-decoration:none;">Book appointment</a>
+  </div>
+
+  <div class="service-row" data-category="hair" onclick="toggleDropdown('freehandmj-dropdown')" style="cursor:pointer;">
+      <div><p class="service-name">Freehand</p><p class="service-price">R200</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="freehandmj-dropdown" data-category="hair">
+      <div class="service-detail-images">
+          <img src="images/corn1.jpg" alt="Freehand 1">
+          <img src="images/corn2.jpg" alt="Freehand 2">
+      </div>
+      <div class="info-pills">
+          <span class="info-pill">⏱ 2–3 hours</span>
+          <span class="info-pill">💰 R200</span>
+      </div>
+      <p class="service-description">Freehand braiding using your natural hair only, for a lightweight, everyday-friendly look.</p>
+      <a href="yisu-booking.html" class="btn-primary" style="text-decoration:none;">Book appointment</a>
+  </div>
+
+  <div class="service-row" data-category="hair" onclick="toggleDropdown('kinkybraids-dropdown')" style="cursor:pointer;">
+      <div><p class="service-name">Kinky braids</p><p class="service-price">R500</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="kinkybraids-dropdown" data-category="hair">
+      <div class="service-detail-images">
+          <img src="images/kinky1.jpg" alt="Kinky braids 1">
+          <img src="images/kinky2.jpg" alt="Kinky braids 2">
+          <img src="images/kinky3.jpg" alt="Kinky braids 3">
+      </div>
+      <div class="info-pills">
+          <span class="info-pill">⏱ 4–5 hours</span>
+          <span class="info-pill">💰 R500</span>
+      </div>
+      <p class="service-description">Textured kinky braids for extra volume and a natural, voluminous finish.</p>
+      <a href="yisu-booking.html" class="btn-primary" style="text-decoration:none;">Book appointment</a>
+  </div>
+
+  <div class="service-row" data-category="hair" onclick="toggleDropdown('washmj-dropdown')" style="cursor:pointer;">
+      <div><p class="service-name">Wash</p><p class="service-price">R100</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="washmj-dropdown" data-category="hair">
+      <div class="service-detail-images">
+          <img src="images/wash.jpg" alt="Wash 1">
+      </div>
+      <div class="info-pills">
+          <span class="info-pill">⏱ 20–30 min</span>
+          <span class="info-pill">💰 R100</span>
+      </div>
+      <p class="service-description">A thorough hair wash to cleanse and refresh, often the first step before a new style.</p>
+      <a href="yisu-booking.html" class="btn-primary" style="text-decoration:none;">Book appointment</a>
+  </div>
+
+  <div class="service-row" data-category="hair" onclick="toggleDropdown('blowoutrelaxer-dropdown')" style="cursor:pointer;">
+      <div><p class="service-name">Blowout relaxer</p><p class="service-price">R150</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="blowoutrelaxer-dropdown" data-category="hair">
+      <div class="service-detail-images">
+          <img src="images/blow1.jpg" alt="Blowout relaxer 1">
+          <img src="images/blow2.jpg" alt="Blowout relaxer 2">
+          <img src="images/blow3.jpg" alt="Blowout relaxer 3">
+      </div>
+      <div class="info-pills">
+          <span class="info-pill">⏱ 60–75 min</span>
+          <span class="info-pill">💰 R150</span>
+      </div>
+      <p class="service-description">A relaxer treatment finished with a smooth blowout for straight, manageable hair.</p>
+      <a href="yisu-booking.html" class="btn-primary" style="text-decoration:none;">Book appointment</a>
+  </div>
+
+  <div class="service-row" data-category="hair" onclick="toggleDropdown('darklovelymj-dropdown')" style="cursor:pointer;">
+      <div><p class="service-name">Dark and Lovely</p><p class="service-price">R250</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="darklovelymj-dropdown" data-category="hair">
+      <div class="service-detail-images">
+          <img src="images/darkandlovely.jpg" alt="Dark and Lovely example 1">
+      </div>
+      <div class="info-pills">
+          <span class="info-pill">⏱ 40–50 min</span>
+          <span class="info-pill">💰 R250</span>
+      </div>
+      <p class="service-description">A nourishing Dark and Lovely treatment for smoother, more manageable hair with added shine.</p>
+      <a href="yisu-booking.html" class="btn-primary" style="text-decoration:none;">Book appointment</a>
+  </div>
+
+  <div class="service-row" data-category="hair" onclick="toggleDropdown('organictreatment-dropdown')" style="cursor:pointer;">
+      <div><p class="service-name">Organic treatment</p><p class="service-price">R150</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="organictreatment-dropdown" data-category="hair">
+      <div class="info-pills">
+          <span class="info-pill">⏱ 30–40 min</span>
+          <span class="info-pill">💰 R150</span>
+      </div>
+      <p class="service-description">A gentle organic hair treatment to restore moisture and softness naturally.</p>
+      <a href="yisu-booking.html" class="btn-primary" style="text-decoration:none;">Book appointment</a>
+  </div>
+
+  <div class="service-row" data-category="hair" onclick="toggleDropdown('organicrelaxer-dropdown')" style="cursor:pointer;">
+      <div><p class="service-name">Organic relaxer</p><p class="service-price">R300</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="organicrelaxer-dropdown" data-category="hair">
+      <div class="info-pills">
+          <span class="info-pill">⏱ 60–90 min</span>
+          <span class="info-pill">💰 R300</span>
+      </div>
+      <p class="service-description">An organic relaxer treatment for straighter, smoother hair using gentler ingredients.</p>
+      <a href="yisu-booking.html" class="btn-primary" style="text-decoration:none;">Book appointment</a>
+  </div>
+
+  <div class="service-row" data-category="hair" onclick="toggleDropdown('sheabuttertreatment-dropdown')" style="cursor:pointer;">
+      <div><p class="service-name">Shea butter treatment</p><p class="service-price">R300</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="sheabuttertreatment-dropdown" data-category="hair">
+      <div class="info-pills">
+          <span class="info-pill">⏱ 40–50 min</span>
+          <span class="info-pill">💰 R300</span>
+      </div>
+      <p class="service-description">A deeply moisturising shea butter treatment for softness, shine, and improved hair health.</p>
+      <a href="yisu-booking.html" class="btn-primary" style="text-decoration:none;">Book appointment</a>
+  </div>
+
+  <div class="service-row" data-category="hair" onclick="toggleDropdown('sewin-dropdown')" style="cursor:pointer;">
+      <div><p class="service-name">Sew-in (weave)</p><p class="service-price">R300</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="sewin-dropdown" data-category="hair">
+      <div class="service-detail-images">
+          <img src="images/installation1.jpg" alt="Sew-in 1">
+          <img src="images/installation2.jpg" alt="Sew-in 2">
+          <img src="images/installation3.jpg" alt="Sew-in 3">
+      </div>
+      <div class="info-pills">
+          <span class="info-pill">⏱ 2–3 hours</span>
+          <span class="info-pill">💰 R300</span>
+      </div>
+      <p class="service-description">A secure sew-in weave install for length and volume, giving a natural, blended finish.</p>
+      <a href="yisu-booking.html" class="btn-primary" style="text-decoration:none;">Book appointment</a>
+  </div>
+
+  <div class="service-row" data-category="hair" onclick="toggleDropdown('wigstraightening-dropdown')" style="cursor:pointer;">
+      <div><p class="service-name">Wig straightening</p><p class="service-price">R150</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="wigstraightening-dropdown" data-category="hair">
+      <div class="info-pills">
+          <span class="info-pill">⏱ 45–60 min</span>
+          <span class="info-pill">💰 R150</span>
+      </div>
+      <p class="service-description">Professional straightening for your wig to refresh its look and keep it looking natural.</p>
+      <a href="yisu-booking.html" class="btn-primary" style="text-decoration:none;">Book appointment</a>
+  </div>
+
+  <div class="service-row" data-category="hair" onclick="toggleDropdown('wigstraighteningwash-dropdown')" style="cursor:pointer;">
+      <div><p class="service-name">Wig straightening with wash</p><p class="service-price">R250</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="wigstraighteningwash-dropdown" data-category="hair">
+      <div class="info-pills">
+          <span class="info-pill">⏱ 75–90 min</span>
+          <span class="info-pill">💰 R250</span>
+      </div>
+      <p class="service-description">A full wash and straightening service for your wig, leaving it clean, smooth, and refreshed.</p>
+      <a href="yisu-booking.html" class="btn-primary" style="text-decoration:none;">Book appointment</a>
+  </div>
+
+  <!-- Haircut -->
+
+  <div class="service-row" data-category="haircut" style="display:none;" onclick="toggleDropdown('adultcut-dropdown')" style="cursor:pointer;">
+      <div><p class="service-name">Adult haircut</p><p class="service-price">R150</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="adultcut-dropdown" data-category="haircut">
+      <div class="service-detail-images">
+          <img src="images/braidsandcut.jpg" alt="Adult haircut 1">
+          <img src="images/haircut2.jpg" alt="Adult haircut exa 2">
+          <img src="images/haircut3.jpg" alt="Adult haircut example 3">
+      </div>
+      <div class="info-pills">
+          <span class="info-pill">⏱ 30–45 min</span>
+          <span class="info-pill">💰 R150</span>
+      </div>
+      <p class="service-description">A precision cut and style tailored to your hair type and face shape, finished with a wash and blow-dry.</p>
+      <a href="yisu-booking.html" class="btn-primary" style="text-decoration:none;">Book appointment</a>
+  </div>
+
+  <div class="service-row" data-category="haircut" style="display:none;" onclick="toggleDropdown('kidscutmj-dropdown')" style="cursor:pointer;">
+      <div><p class="service-name">Kids haircut</p><p class="service-price">R100</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="kidscutmj-dropdown" data-category="haircut">
+      <div class="service-detail-images">
+          <img src="images/kid2.jpg" alt="Kids haircut 1">
+          <img src="images/kid4.jpg" alt="Kids haircut 2">
+          <img src="images/kids.jpg" alt="Kids haircut 3">
+      </div>
+      <div class="info-pills">
+          <span class="info-pill">⏱ 20–30 min</span>
+          <span class="info-pill">💰 R100</span>
+      </div>
+      <p class="service-description">A gentle, quick haircut for kids, done with patience to keep the experience easy and comfortable.</p>
+      <a href="yisu-booking.html" class="btn-primary" style="text-decoration:none;">Book appointment</a>
+  </div>
+
+  <div class="service-row" data-category="haircut" style="display:none;" onclick="toggleDropdown('scurlmj-dropdown')" style="cursor:pointer;">
+      <div><p class="service-name">S-curl</p><p class="service-price">R250</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="scurlmj-dropdown" data-category="haircut">
+      <div class="service-detail-images">
+          <img src="images/scurlunisex.jpeg" alt="S-curl 1">
+          <img src="images/scurl3.jpg" alt="S-curl  2">
+          <img src="images/scurluni2.jpeg" alt="S-curl 3">
+      </div>
+      <div class="info-pills">
+          <span class="info-pill">⏱ 60–90 min</span>
+          <span class="info-pill">💰 R250</span>
+      </div>
+      <p class="service-description">An S-curl treatment for soft, defined curls and natural-looking texture.</p>
+      <a href="yisu-booking.html" class="btn-primary" style="text-decoration:none;">Book appointment</a>
+  </div>
+
+  <div class="service-row" data-category="haircut" style="display:none;" onclick="toggleDropdown('cutdyeblack-dropdown')" style="cursor:pointer;">
+      <div><p class="service-name">Cut and dye (black)</p><p class="service-price">R250</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="cutdyeblack-dropdown" data-category="haircut">
+      <div class="service-detail-images">
+          <img src="images/cutandbeard.jpg" alt="Cut and dye black 1">
+          <img src="images/haircutandbeard.jpg" alt="Cut and dye black 2">
+          <img src="images/haircutandye.jpg" alt="Cut and dye black 3">
+      </div>
+      <div class="info-pills">
+          <span class="info-pill">⏱ 60–75 min</span>
+          <span class="info-pill">💰 R250</span>
+      </div>
+      <p class="service-description">A fresh cut paired with a deep black dye for full, even coverage and a clean finish.</p>
+      <a href="yisu-booking.html" class="btn-primary" style="text-decoration:none;">Book appointment</a>
+  </div>
+
+  <div class="service-row" data-category="haircut" style="display:none;" onclick="toggleDropdown('cutdyecolours-dropdown')" style="cursor:pointer;">
+      <div><p class="service-name">Cut and dye (colours)</p><p class="service-price">R300</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="cutdyecolours-dropdown" data-category="haircut">
+      <div class="service-detail-images">
+          <img src="images/grey-hair.jpg" alt="Cut and dye colours 1">
+          <img src="images/colourdye.jpeg" alt="Cut and dye colours 2">
+          <img src="images/cutandbleach.jpg" alt="Cut and dye colours 3">
+      </div>
+      <div class="info-pills">
+          <span class="info-pill">⏱ 75–90 min</span>
+          <span class="info-pill">💰 R300</span>
+      </div>
+      <p class="service-description">A cut finished with a bold colour treatment for a striking change of style.</p>
+      <a href="yisu-booking.html" class="btn-primary" style="text-decoration:none;">Book appointment</a>
+  </div>
+
+  <div class="service-row" data-category="haircut" style="display:none;" onclick="toggleDropdown('shaveortrim-dropdown')" style="cursor:pointer;">
+      <div><p class="service-name">Shave or trim</p><p class="service-price">R60</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="shaveortrim-dropdown" data-category="haircut">
+      <div class="service-detail-images">
+          <img src="images/trim.jpg" alt="Shave or trim 1">
+          <img src="images/trim2.jpg" alt="Shave or trm 2">
+          <img src="images/trim3.jpg" alt="Shave or trim 3">
+      </div>
+      <div class="info-pills">
+          <span class="info-pill">⏱ 5–10 min</span>
+          <span class="info-pill">💰 R60</span>
+      </div>
+      <p class="service-description">A quick beard shave or trim to keep your facial hair neat and sharp between full grooming sessions.</p>
+      <a href="yisu-booking.html" class="btn-primary" style="text-decoration:none;">Book appointment</a>
+  </div>
+
+  <!-- Mizani -->
+
+  <div class="service-row" data-category="mizani" style="display:none;" onclick="toggleDropdown('mizanirelaxer-dropdown')" style="cursor:pointer;">
+      <div><p class="service-name">Mizani relaxer</p><p class="service-price">R500</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="mizanirelaxer-dropdown" data-category="mizani">
+      <div class="service-detail-images">
+          <img src="images/mizani.jpg" alt="Mizani relaxer 1">
+      </div>
+      <div class="info-pills">
+          <span class="info-pill">⏱ 90–120 min</span>
+          <span class="info-pill">💰 R500</span>
+      </div>
+      <p class="service-description">A professional Mizani relaxer treatment for smooth, straight results with a salon-grade formula.</p>
+      <a href="yisu-booking.html" class="btn-primary" style="text-decoration:none;">Book appointment</a>
+  </div>
+
+  <div class="service-row" data-category="mizani" style="display:none;" onclick="toggleDropdown('mizanibondphorce-dropdown')" style="cursor:pointer;">
+      <div><p class="service-name">Mizani Bondphorce</p><p class="service-price">R600</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="mizanibondphorce-dropdown" data-category="mizani">
+      <div class="service-detail-images">
+          <img src="images/mizani2.jpg" alt="Mizani Bondphorce 1">
+      </div>
+      <div class="info-pills">
+          <span class="info-pill">⏱ 100–130 min</span>
+          <span class="info-pill">💰 R600</span>
+      </div>
+      <p class="service-description">A strengthening Mizani Bondphorce treatment designed to protect hair integrity during chemical straightening.</p>
+      <a href="yisu-booking.html" class="btn-primary" style="text-decoration:none;">Book appointment</a>
+  </div>
+
+  <div class="service-row" data-category="mizani" style="display:none;" onclick="toggleDropdown('mizanisensitive-dropdown')" style="cursor:pointer;">
+      <div><p class="service-name">Mizani Sensitive</p><p class="service-price">R600</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="mizanisensitive-dropdown" data-category="mizani">
+      <div class="service-detail-images">
+          <img src="images/mizani3.jpg" alt="Mizani Sensitive 1">
+      </div>
+      <div class="info-pills">
+          <span class="info-pill">⏱ 90–120 min</span>
+          <span class="info-pill">💰 R600</span>
+      </div>
+      <p class="service-description">A gentler Mizani formula suited to sensitive scalps, delivering smooth results with less irritation.</p>
+      <a href="yisu-booking.html" class="btn-primary" style="text-decoration:none;">Book appointment</a>
+  </div>
+
+  <!-- Nails -->
+
+  <div class="service-row" data-category="nails" style="display:none;" onclick="toggleDropdown('acrylicshort-dropdown')" style="cursor:pointer;">
+      <div><p class="service-name">Acrylic (short)</p><p class="service-price">R260</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="acrylicshort-dropdown" data-category="nails">
+      <div class="service-detail-images">
+          <img src="images/acrylic1.jpg" alt="Acrylic short 1">
+          <img src="images/acrylic2.jpg" alt="Acrylic short 2">
+          <img src="images/acrylic3.jpg" alt="Acrylic short 3">
+      </div>
+      <div class="info-pills">
+          <span class="info-pill">⏱ 50–60 min</span>
+          <span class="info-pill">💰 R260</span>
+      </div>
+      <p class="service-description">Short acrylic nail extensions for a neat, practical length with a smooth, durable finish.</p>
+      <a href="yisu-booking.html" class="btn-primary" style="text-decoration:none;">Book appointment</a>
+  </div>
+
+  <div class="service-row" data-category="nails" style="display:none;" onclick="toggleDropdown('acryliclong-dropdown')" style="cursor:pointer;">
+      <div><p class="service-name">Acrylic (long)</p><p class="service-price">R280</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="acryliclong-dropdown" data-category="nails">
+      <div class="service-detail-images">
+          <img src="images/acrylic4.jpg" alt="Acrylic long 1">
+          <img src="images/acrylic5.jpg" alt="Acrylic long 2">
+          <img src="images/acrylic6.jpg" alt="Acrylic long 3">
+      </div>
+      <div class="info-pills">
+          <span class="info-pill">⏱ 60–75 min</span>
+          <span class="info-pill">💰 R280</span>
+      </div>
+      <p class="service-description">Longer acrylic nail extensions for a bold, statement look with a strong, even finish.</p>
+      <a href="yisu-booking.html" class="btn-primary" style="text-decoration:none;">Book appointment</a>
+  </div>
+
+  <div class="service-row" data-category="nails" style="display:none;" onclick="toggleDropdown('polygelmj-dropdown')" style="cursor:pointer;">
+      <div><p class="service-name">Polygel</p><p class="service-price">R300</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="polygelmj-dropdown" data-category="nails">
+      <div class="service-detail-images">
+          <img src="images/poly1.jpg" alt="Polygel 1">
+          <img src="images/poly2.jpg" alt="Polygel 2">
+          <img src="images/poly3.jpg" alt="Polygel 3">
+      </div>
+      <div class="info-pills">
+          <span class="info-pill">⏱ 60–75 min</span>
+          <span class="info-pill">💰 R300</span>
+      </div>
+      <p class="service-description">A lightweight, flexible polygel overlay for strong, natural-looking nails.</p>
+      <a href="yisu-booking.html" class="btn-primary" style="text-decoration:none;">Book appointment</a>
+  </div>
+
+  <div class="service-row" data-category="nails" style="display:none;" onclick="toggleDropdown('hardgel-dropdown')" style="cursor:pointer;">
+      <div><p class="service-name">Hardgel</p><p class="service-price">R250</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="hardgel-dropdown" data-category="nails">
+      <div class="service-detail-images">
+          <img src="images/hard1.jpg" alt="Hardgel 1">
+          <img src="images/hard2.jpg" alt="Hardgel 2">
+          <img src="images/hard3.jpg" alt="Hardgel 3">
+      </div>
+      <div class="info-pills">
+          <span class="info-pill">⏱ 60 min</span>
+          <span class="info-pill">💰 R250</span>
+      </div>
+      <p class="service-description">A durable hardgel overlay providing strength and a smooth, glossy finish.</p>
+      <a href="yisu-booking.html" class="btn-primary" style="text-decoration:none;">Book appointment</a>
+  </div>
+
+  <div class="service-row" data-category="nails" style="display:none;" onclick="toggleDropdown('gelishmani-dropdown')" style="cursor:pointer;">
+      <div><p class="service-name">Gelish (mani)</p><p class="service-price">R180</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="gelishmani-dropdown" data-category="nails">
+      <div class="service-detail-images">
+          <img src="images/gel1.jpg" alt="Gelish mani 1">
+          <img src="images/gel2.jpg" alt="Gelish mani 2">
+          <img src="images/gel3.jpg" alt="Gelish mani 3">
+      </div>
+      <div class="info-pills">
+          <span class="info-pill">⏱ 45–60 min</span>
+          <span class="info-pill">💰 R180</span>
+      </div>
+      <p class="service-description">A gelish manicure with long-lasting, chip-resistant colour and a glossy finish.</p>
+      <a href="yisu-booking.html" class="btn-primary" style="text-decoration:none;">Book appointment</a>
+  </div>
+
+  <div class="service-row" data-category="nails" style="display:none;" onclick="toggleDropdown('gelishpedi-dropdown')" style="cursor:pointer;">
+      <div><p class="service-name">Gelish (pedi)</p><p class="service-price">R150</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="gelishpedi-dropdown" data-category="nails">
+      <div class="service-detail-images">
+          <img src="images/pedi1.jpg" alt="Gelish pedi 1">
+          <img src="images/pedi2.jpg" alt="Gelish pedi 2">
+          <img src="images/pedi3.jpg" alt="Gelish pedi 3">
+      </div>
+      <div class="info-pills">
+          <span class="info-pill">⏱ 45–60 min</span>
+          <span class="info-pill">💰 R150</span>
+      </div>
+      <p class="service-description">A relaxing gelish pedicure finished with long-lasting polish.</p>
+      <a href="yisu-booking.html" class="btn-primary" style="text-decoration:none;">Book appointment</a>
+  </div>
+
+  <div class="service-row" data-category="nails" style="display:none;" onclick="toggleDropdown('soakoffgelmj-dropdown')" style="cursor:pointer;">
+      <div><p class="service-name">Soak-off gel</p><p class="service-price">R60</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="soakoffgelmj-dropdown" data-category="nails">
+      <div class="service-detail-images">
+          <img src="images/soakoff.jpg" alt="Soak-off gel 1">
+      </div>
+      <div class="info-pills">
+          <span class="info-pill">⏱ 15–20 min</span>
+          <span class="info-pill">💰 R60</span>
+      </div>
+      <p class="service-description">Gentle removal of gel polish without damaging the natural nail underneath.</p>
+      <a href="yisu-booking.html" class="btn-primary" style="text-decoration:none;">Book appointment</a>
+  </div>
+
+  <div class="service-row" data-category="nails" style="display:none;" onclick="toggleDropdown('tipgelmani-dropdown')" style="cursor:pointer;">
+      <div><p class="service-name">Tip and gel mani</p><p class="service-price">R220</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="tipgelmani-dropdown" data-category="nails">
+      <div class="service-detail-images">
+          <img src="images/tips1.jpg" alt="Tip and gel mani 1">
+          <img src="images/tips2.jpg" alt="Tip and gel mani 2">
+          <img src="images/tips3.jpg" alt="Tip and gel mani 3">
+      </div>
+      <div class="info-pills">
+          <span class="info-pill">⏱ 60–75 min</span>
+          <span class="info-pill">💰 R220</span>
+      </div>
+      <p class="service-description">Nail tips with a gel finish combined into one manicure appointment for added length and durability.</p>
+      <a href="yisu-booking.html" class="btn-primary" style="text-decoration:none;">Book appointment</a>
+  </div>
+
+  <div class="service-row" data-category="nails" style="display:none;" onclick="toggleDropdown('tippedi-dropdown')" style="cursor:pointer;">
+      <div><p class="service-name">Tip pedi</p><p class="service-price">R180</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="tippedi-dropdown" data-category="nails">
+      <div class="service-detail-images">
+          <img src="images/pedi1.jpg" alt="Tip pedi 1">
+          <img src="images/pedi2.jpg" alt="Tip pedi 2">
+          <img src="images/pedi3.jpg" alt="Tip pedi 3">
+      </div>
+      <div class="info-pills">
+          <span class="info-pill">⏱ 45–60 min</span>
+          <span class="info-pill">💰 R180</span>
+      </div>
+      <p class="service-description">A pedicure with nail tips for added length, finished with polish of your choice.</p>
+      <a href="yisu-booking.html" class="btn-primary" style="text-decoration:none;">Book appointment</a>
+  </div>
+
+  <div class="service-row" data-category="nails" style="display:none;" onclick="toggleDropdown('soakoffacrylicmj-dropdown')" style="cursor:pointer;">
+      <div><p class="service-name">Soak-off acrylic</p><p class="service-price">R70</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="soakoffacrylicmj-dropdown" data-category="nails">
+      <div class="service-detail-images">
+          <img src="images/soakoff.jpg" alt="Soak-off acrylic 1">
+      </div>
+      <div class="info-pills">
+          <span class="info-pill">⏱ 20–25 min</span>
+          <span class="info-pill">💰 R70</span>
+      </div>
+      <p class="service-description">Careful removal of acrylic nails to protect the natural nail bed underneath.</p>
+      <a href="yisu-booking.html" class="btn-primary" style="text-decoration:none;">Book appointment</a>
+  </div>
+
+  <div class="service-row" data-category="nails" style="display:none;" onclick="toggleDropdown('artpernail-dropdown')" style="cursor:pointer;">
+      <div><p class="service-name">Art per nail</p><p class="service-price">R20</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="artpernail-dropdown" data-category="nails">
+      <div class="service-detail-images">
+          <img src="images/poly1.jpg" alt="Art per nail 1">
+          <img src="images/poly2.jpg" alt="Art per nail 2">
+          <img src="images/poly3.jpg" alt="Art per nail 3">
+      </div>
+      <div class="info-pills">
+          <span class="info-pill">⏱ 5–10 min per nail</span>
+          <span class="info-pill">💰 R20</span>
+      </div>
+      <p class="service-description">Custom nail art added per nail, from simple accents to detailed hand-painted designs.</p>
+      <a href="yisu-booking.html" class="btn-primary" style="text-decoration:none;">Book appointment</a>
+  </div>
+
+  <div class="service-row" data-category="nails" style="display:none;" onclick="toggleDropdown('pedicurescrub-dropdown')" style="cursor:pointer;">
+      <div><p class="service-name">Pedicure (scrub)</p><p class="service-price">R400</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="pedicurescrub-dropdown" data-category="nails">
+      <div class="service-detail-images">
+          <img src="images/scrub1.jpg" alt="Pedicure scrub 1">
+          <img src="images/scrub2.jpg" alt="Pedicure scrub 2">
+          <img src="images/scrub3.jpg" alt="Pedicure scrub 3">
+      </div>
+      <div class="info-pills">
+          <span class="info-pill">⏱ 60–75 min</span>
+          <span class="info-pill">💰 R400</span>
+      </div>
+      <p class="service-description">A full pedicure with an exfoliating scrub treatment, leaving feet soft, smooth, and refreshed.</p>
+      <a href="yisu-booking.html" class="btn-primary" style="text-decoration:none;">Book appointment</a>
+  </div>
+
+  <!-- Lashes -->
+
+  <div class="service-row" data-category="lashes" style="display:none;" onclick="toggleDropdown('clusterlash-dropdown')" style="cursor:pointer;">
+      <div><p class="service-name">Cluster lash</p><p class="service-price">R250</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="clusterlash-dropdown" data-category="lashes">
+      <div class="service-detail-images">
+          <img src="images/cluster1.jpg" alt="Cluster lash 1">
+          <img src="images/cluster2.jpg" alt="Cluster lash 2">
+          <img src="images/cluster3.jpg" alt="Cluster lash 3">
+      </div>
+      <div class="info-pills">
+          <span class="info-pill">⏱ 45–60 min</span>
+          <span class="info-pill">💰 R250</span>
+      </div>
+      <p class="service-description">Cluster lashes are pre-made fans applied in small groups for a fuller, more dramatic lash line without the time commitment of individual extensions.</p>
+      <a href="yisu-booking.html" class="btn-primary" style="text-decoration:none;">Book appointment</a>
+  </div>
+
+  <div class="service-row" data-category="lashes" style="display:none;" onclick="toggleDropdown('individuallash-dropdown')" style="cursor:pointer;">
+      <div><p class="service-name">Individual lash</p><p class="service-price">R350</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="individuallash-dropdown" data-category="lashes">
+      <div class="service-detail-images">
+          <img src="images/indi1.jpg" alt="Individual lash 1">
+          <img src="images/indi2.jpg" alt="Individual lash 2">
+          <img src="images/indi3.jpg" alt="Individual lash 3">
+      </div>
+      <div class="info-pills">
+          <span class="info-pill">⏱ 90–120 min</span>
+          <span class="info-pill">💰 R350</span>
+      </div>
+      <p class="service-description">Individual lash extensions applied one by one for a natural, fully customisable finish.</p>
+      <a href="yisu-booking.html" class="btn-primary" style="text-decoration:none;">Book appointment</a>
+  </div>
+
+  <!-- Dreadlocks -->
+
+  <div class="service-row" data-category="dreadlocks" style="display:none;" onclick="toggleDropdown('twiststylemj-dropdown')" style="cursor:pointer;">
+      <div><p class="service-name">Twist and style</p><p class="service-price">R350</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="twiststylemj-dropdown" data-category="dreadlocks">
+      <div class="service-detail-images">
+          <img src="images/twist1.jpg" alt="Twist and style 1">
+          <img src="images/twist2.jpg" alt="Twist and style 2">
+          <img src="images/twist3.jpg" alt="Twist and style 3">
+      </div>
+      <div class="info-pills">
+          <span class="info-pill">⏱ 2–3 hours</span>
+          <span class="info-pill">💰 R350</span>
+      </div>
+      <p class="service-description">Loc twisting and styling for a fresh, well-defined finish.</p>
+      <a href="yisu-booking.html" class="btn-primary" style="text-decoration:none;">Book appointment</a>
+  </div>
+
+  <div class="service-row" data-category="dreadlocks" style="display:none;" onclick="toggleDropdown('treatmentmj-dropdown')" style="cursor:pointer;">
+      <div><p class="service-name">Treatment</p><p class="service-price">R150</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="treatmentmj-dropdown" data-category="dreadlocks">
+      <div class="info-pills">
+          <span class="info-pill">⏱ 30–40 min</span>
+          <span class="info-pill">💰 R150</span>
+      </div>
+      <p class="service-description">A nourishing loc treatment for scalp health and stronger, more manageable locs.</p>
+      <a href="yisu-booking.html" class="btn-primary" style="text-decoration:none;">Book appointment</a>
+  </div>
+
+  <!-- Makeup -->
+
+  <div class="service-row" data-category="makeup" style="display:none;" onclick="toggleDropdown('naturalmakeup-dropdown')" style="cursor:pointer;">
+      <div><p class="service-name">Natural</p><p class="service-price">R450</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="naturalmakeup-dropdown" data-category="makeup">
+      <div class="service-detail-images">
+          <img src="images/makeup1.jpg" alt="Natural makeup 1">
+          <img src="images/makeup2.jpg" alt="Natural makeup 2">
+          <img src="images/makeup3.jpg" alt="Natural makeup 3">
+      </div>
+      <div class="info-pills">
+          <span class="info-pill">⏱ 40–50 min</span>
+          <span class="info-pill">💰 R450</span>
+      </div>
+      <p class="service-description">A soft, natural makeup look that enhances your features for everyday elegance.</p>
+      <a href="yisu-booking.html" class="btn-primary" style="text-decoration:none;">Book appointment</a>
+  </div>
+
+  <div class="service-row" data-category="makeup" style="display:none;" onclick="toggleDropdown('glammakeup-dropdown')" style="cursor:pointer;">
+      <div><p class="service-name">Glam</p><p class="service-price">R550</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="glammakeup-dropdown" data-category="makeup">
+      <div class="service-detail-images">
+          <img src="images/glam1.jpg" alt="Glam makeup 1">
+          <img src="images/glam2.jpg" alt="Glam makeup 2">
+          <img src="images/glam3.jpg" alt="Glam makeup 3">
+      </div>
+      <div class="info-pills">
+          <span class="info-pill">⏱ 60–75 min</span>
+          <span class="info-pill">💰 R550</span>
+      </div>
+      <p class="service-description">A bolder, full-glam makeup application for special occasions and photo-ready results.</p>
+      <a href="yisu-booking.html" class="btn-primary" style="text-decoration:none;">Book appointment</a>
+  </div>
+
+</div>
+
+<footer class="site-footer">
+  <p>&copy; 2026 SilkyTouch. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+<script>
+  document.querySelectorAll('.tab').forEach(function (tab) {
+    tab.addEventListener('click', function () {
+      document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+      const category = tab.getAttribute('data-category');
+      document.querySelectorAll('.service-row, .service-dropdown').forEach(function (row) {
+        row.style.display = row.getAttribute('data-category') === category ? '' : 'none';
+        row.classList.remove('open');
+      });
+    });
+  });
+</script>
+
+</body>
+</html>

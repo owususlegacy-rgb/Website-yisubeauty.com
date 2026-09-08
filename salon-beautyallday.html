@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Beauty All Day — Yisu</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500&family=Jost:wght@200;300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section class="salon-hero">
+    <img class="salon-logo" src="images/logo4.jpg" alt="Mama Jane Beauty all day logo"> 
+  <a href="index.html" class="back-link">&larr; Home</a>
+  <h1>Beauty All Day</h1>
+  <p class="salon-address">Chinatown Mall, Entrance 3, Old Pretoria Rd, Halfway House Estate, Midrand, 1685</p>
+  <div class="hero-actions">
+    <a href="beautyallday-booking.html" class="btn-primary" style="text-decoration:none;">Book appointment</a>
+    <a href="beautyallday-bundles.html" class="btn-secondary">Bundle packages</a>
+    <a href="beautyallday-gallery.html" class="btn-secondary">Gallery / Inspo</a>
+  </div>
+</section>
+
+<div class="category-tabs">
+  <button class="tab active" data-category="haircut">Haircut</button>
+  <button class="tab" data-category="braiding">Braiding</button>
+  <button class="tab" data-category="nails">Nails</button>
+  <button class="tab" data-category="lashes">Lashes</button>
+</div>
+
+<div class="service-section" id="serviceList">
+  <div class="service-row" data-category="haircut" onclick="toggleDropdown('beautyallday-menscut')" style="cursor:pointer;">
+      <div><p class="service-name">Men's cut</p><p class="service-price">R80</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="beautyallday-menscut" data-category="haircut">
+      <div class="info-pills">
+          <span class="info-pill">⏱ 30–60 min</span>
+          <span class="info-pill">💰 R80</span>
+      </div>
+      <p class="service-description">Men's cut at Beauty All Day. Booking secures your slot; the service cost is settled at the salon.</p>
+      <a href="beautyallday-booking.html" class="book-now-pulse" style="text-decoration:none;">Book now</a>
+  </div>
+  <div class="service-row" data-category="haircut" onclick="toggleDropdown('beautyallday-ladiescut')" style="cursor:pointer;">
+      <div><p class="service-name">Ladies' cut</p><p class="service-price">R80</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="beautyallday-ladiescut" data-category="haircut">
+      <div class="info-pills">
+          <span class="info-pill">⏱ 30–60 min</span>
+          <span class="info-pill">💰 R80</span>
+      </div>
+      <p class="service-description">Ladies' cut at Beauty All Day. Booking secures your slot; the service cost is settled at the salon.</p>
+      <a href="beautyallday-booking.html" class="book-now-pulse" style="text-decoration:none;">Book now</a>
+  </div>
+  <div class="service-row" data-category="haircut" onclick="toggleDropdown('beautyallday-kidscut')" style="cursor:pointer;">
+      <div><p class="service-name">Kids' cut</p><p class="service-price">R70</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="beautyallday-kidscut" data-category="haircut">
+      <div class="info-pills">
+          <span class="info-pill">⏱ 30–60 min</span>
+          <span class="info-pill">💰 R70</span>
+      </div>
+      <p class="service-description">Kids' cut at Beauty All Day. Booking secures your slot; the service cost is settled at the salon.</p>
+      <a href="beautyallday-booking.html" class="book-now-pulse" style="text-decoration:none;">Book now</a>
+  </div>
+  <div class="service-row" data-category="haircut" onclick="toggleDropdown('beautyallday-shavingpowder')" style="cursor:pointer;">
+      <div><p class="service-name">Shaving powder</p><p class="service-price">R100</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="beautyallday-shavingpowder" data-category="haircut">
+      <div class="info-pills">
+          <span class="info-pill">⏱ 30–60 min</span>
+          <span class="info-pill">💰 R100</span>
+      </div>
+      <p class="service-description">Shaving powder at Beauty All Day. Booking secures your slot; the service cost is settled at the salon.</p>
+      <a href="beautyallday-booking.html" class="book-now-pulse" style="text-decoration:none;">Book now</a>
+  </div>
+  <div class="service-row" data-category="haircut" onclick="toggleDropdown('beautyallday-shavetrim')" style="cursor:pointer;">
+      <div><p class="service-name">Shave or trim</p><p class="service-price">R40</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="beautyallday-shavetrim" data-category="haircut">
+      <div class="info-pills">
+          <span class="info-pill">⏱ 30–60 min</span>
+          <span class="info-pill">💰 R40</span>
+      </div>
+      <p class="service-description">Shave or trim at Beauty All Day. Booking secures your slot; the service cost is settled at the salon.</p>
+      <a href="beautyallday-booking.html" class="book-now-pulse" style="text-decoration:none;">Book now</a>
+  </div>
+  <div class="service-row" data-category="haircut" onclick="toggleDropdown('beautyallday-cutblackdye')" style="cursor:pointer;">
+      <div><p class="service-name">Cut and black dye</p><p class="service-price">R180</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="beautyallday-cutblackdye" data-category="haircut">
+      <div class="info-pills">
+          <span class="info-pill">⏱ 30–60 min</span>
+          <span class="info-pill">💰 R180</span>
+      </div>
+      <p class="service-description">Cut and black dye at Beauty All Day. Booking secures your slot; the service cost is settled at the salon.</p>
+      <a href="beautyallday-booking.html" class="book-now-pulse" style="text-decoration:none;">Book now</a>
+  </div>
+  <div class="service-row" data-category="haircut" onclick="toggleDropdown('beautyallday-cutbleach')" style="cursor:pointer;">
+      <div><p class="service-name">Cut and bleach / colour</p><p class="service-price">R250</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="beautyallday-cutbleach" data-category="haircut">
+      <div class="info-pills">
+          <span class="info-pill">⏱ 30–60 min</span>
+          <span class="info-pill">💰 R250</span>
+      </div>
+      <p class="service-description">Cut and bleach / colour at Beauty All Day. Booking secures your slot; the service cost is settled at the salon.</p>
+      <a href="beautyallday-booking.html" class="book-now-pulse" style="text-decoration:none;">Book now</a>
+  </div>
+  <div class="service-row" data-category="haircut" onclick="toggleDropdown('beautyallday-cutgreycolour')" style="cursor:pointer;">
+      <div><p class="service-name">Cut and grey colour</p><p class="service-price">R300</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="beautyallday-cutgreycolour" data-category="haircut">
+      <div class="info-pills">
+          <span class="info-pill">⏱ 30–60 min</span>
+          <span class="info-pill">💰 R300</span>
+      </div>
+      <p class="service-description">Cut and grey colour at Beauty All Day. Booking secures your slot; the service cost is settled at the salon.</p>
+      <a href="beautyallday-booking.html" class="book-now-pulse" style="text-decoration:none;">Book now</a>
+  </div>
+  <div class="service-row" data-category="haircut" onclick="toggleDropdown('beautyallday-cutscurl')" style="cursor:pointer;">
+      <div><p class="service-name">Cut and S-curl</p><p class="service-price">R250</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="beautyallday-cutscurl" data-category="haircut">
+      <div class="info-pills">
+          <span class="info-pill">⏱ 30–60 min</span>
+          <span class="info-pill">💰 R250</span>
+      </div>
+      <p class="service-description">Cut and S-curl at Beauty All Day. Booking secures your slot; the service cost is settled at the salon.</p>
+      <a href="beautyallday-booking.html" class="book-now-pulse" style="text-decoration:none;">Book now</a>
+  </div>
+  <div class="service-row" data-category="haircut" onclick="toggleDropdown('beautyallday-blackdyeonly')" style="cursor:pointer;">
+      <div><p class="service-name">Only black dye</p><p class="service-price">R150</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="beautyallday-blackdyeonly" data-category="haircut">
+      <div class="info-pills">
+          <span class="info-pill">⏱ 30–60 min</span>
+          <span class="info-pill">💰 R150</span>
+      </div>
+      <p class="service-description">Only black dye at Beauty All Day. Booking secures your slot; the service cost is settled at the salon.</p>
+      <a href="beautyallday-booking.html" class="book-now-pulse" style="text-decoration:none;">Book now</a>
+  </div>
+  <div class="service-row" data-category="haircut" onclick="toggleDropdown('beautyallday-scurlonly')" style="cursor:pointer;">
+      <div><p class="service-name">Only S-curl</p><p class="service-price">R180</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="beautyallday-scurlonly" data-category="haircut">
+      <div class="info-pills">
+          <span class="info-pill">⏱ 30–60 min</span>
+          <span class="info-pill">💰 R180</span>
+      </div>
+      <p class="service-description">Only S-curl at Beauty All Day. Booking secures your slot; the service cost is settled at the salon.</p>
+      <a href="beautyallday-booking.html" class="book-now-pulse" style="text-decoration:none;">Book now</a>
+  </div>
+  <div class="service-row" data-category="haircut" onclick="toggleDropdown('beautyallday-cutbeardblackdye')" style="cursor:pointer;">
+      <div><p class="service-name">Cut and beard black dye</p><p class="service-price">R200</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="beautyallday-cutbeardblackdye" data-category="haircut">
+      <div class="info-pills">
+          <span class="info-pill">⏱ 30–60 min</span>
+          <span class="info-pill">💰 R200</span>
+      </div>
+      <p class="service-description">Cut and beard black dye at Beauty All Day. Booking secures your slot; the service cost is settled at the salon.</p>
+      <a href="beautyallday-booking.html" class="book-now-pulse" style="text-decoration:none;">Book now</a>
+  </div>
+  <div class="service-row" data-category="braiding" style="display:none;" onclick="toggleDropdown('beautyallday-freehands')" style="cursor:pointer;">
+      <div><p class="service-name">Freehands</p><p class="service-price">R150</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="beautyallday-freehands" data-category="braiding">
+      <div class="info-pills">
+          <span class="info-pill">⏱ 2–5 hours</span>
+          <span class="info-pill">💰 R150</span>
+      </div>
+      <p class="service-description">Freehands at Beauty All Day. Booking secures your slot; the service cost is settled at the salon.</p>
+      <a href="beautyallday-booking.html" class="book-now-pulse" style="text-decoration:none;">Book now</a>
+  </div>
+  <div class="service-row" data-category="braiding" style="display:none;" onclick="toggleDropdown('beautyallday-straightup')" style="cursor:pointer;">
+      <div><p class="service-name">Straight up</p><p class="service-price">R350</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="beautyallday-straightup" data-category="braiding">
+      <div class="info-pills">
+          <span class="info-pill">⏱ 2–5 hours</span>
+          <span class="info-pill">💰 R350</span>
+      </div>
+      <p class="service-description">Straight up at Beauty All Day. Booking secures your slot; the service cost is settled at the salon.</p>
+      <a href="beautyallday-booking.html" class="book-now-pulse" style="text-decoration:none;">Book now</a>
+  </div>
+  <div class="service-row" data-category="braiding" style="display:none;" onclick="toggleDropdown('beautyallday-straightback')" style="cursor:pointer;">
+      <div><p class="service-name">Straight back</p><p class="service-price">R300</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="beautyallday-straightback" data-category="braiding">
+      <div class="info-pills">
+          <span class="info-pill">⏱ 2–5 hours</span>
+          <span class="info-pill">💰 R300</span>
+      </div>
+      <p class="service-description">Straight back at Beauty All Day. Booking secures your slot; the service cost is settled at the salon.</p>
+      <a href="beautyallday-booking.html" class="book-now-pulse" style="text-decoration:none;">Book now</a>
+  </div>
+  <div class="service-row" data-category="braiding" style="display:none;" onclick="toggleDropdown('beautyallday-knotless')" style="cursor:pointer;">
+      <div><p class="service-name">Knotless (includes hairpiece)</p><p class="service-price">R700</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="beautyallday-knotless" data-category="braiding">
+      <div class="info-pills">
+          <span class="info-pill">⏱ 2–5 hours</span>
+          <span class="info-pill">💰 R700</span>
+      </div>
+      <p class="service-description">Knotless (includes hairpiece) at Beauty All Day. Booking secures your slot; the service cost is settled at the salon.</p>
+      <a href="beautyallday-booking.html" class="book-now-pulse" style="text-decoration:none;">Book now</a>
+  </div>
+  <div class="service-row" data-category="braiding" style="display:none;" onclick="toggleDropdown('beautyallday-treatment')" style="cursor:pointer;">
+      <div><p class="service-name">Treatment</p><p class="service-price">R120</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="beautyallday-treatment" data-category="braiding">
+      <div class="info-pills">
+          <span class="info-pill">⏱ 2–5 hours</span>
+          <span class="info-pill">💰 R120</span>
+      </div>
+      <p class="service-description">Treatment at Beauty All Day. Booking secures your slot; the service cost is settled at the salon.</p>
+      <a href="beautyallday-booking.html" class="book-now-pulse" style="text-decoration:none;">Book now</a>
+  </div>
+  <div class="service-row" data-category="braiding" style="display:none;" onclick="toggleDropdown('beautyallday-twosteps')" style="cursor:pointer;">
+      <div><p class="service-name">Two steps</p><p class="service-price">R500</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="beautyallday-twosteps" data-category="braiding">
+      <div class="info-pills">
+          <span class="info-pill">⏱ 2–5 hours</span>
+          <span class="info-pill">💰 R500</span>
+      </div>
+      <p class="service-description">Two steps at Beauty All Day. Booking secures your slot; the service cost is settled at the salon.</p>
+      <a href="beautyallday-booking.html" class="book-now-pulse" style="text-decoration:none;">Book now</a>
+  </div>
+  <div class="service-row" data-category="nails" style="display:none;" onclick="toggleDropdown('beautyallday-tipsgel')" style="cursor:pointer;">
+      <div><p class="service-name">Tips and gel</p><p class="service-price">R150</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="beautyallday-tipsgel" data-category="nails">
+      <div class="info-pills">
+          <span class="info-pill">⏱ 45–75 min</span>
+          <span class="info-pill">💰 R150</span>
+      </div>
+      <p class="service-description">Tips and gel at Beauty All Day. Booking secures your slot; the service cost is settled at the salon.</p>
+      <a href="beautyallday-booking.html" class="book-now-pulse" style="text-decoration:none;">Book now</a>
+  </div>
+  <div class="service-row" data-category="nails" style="display:none;" onclick="toggleDropdown('beautyallday-acrylicplain')" style="cursor:pointer;">
+      <div><p class="service-name">Acrylic (plain)</p><p class="service-price">R200</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="beautyallday-acrylicplain" data-category="nails">
+      <div class="info-pills">
+          <span class="info-pill">⏱ 45–75 min</span>
+          <span class="info-pill">💰 R200</span>
+      </div>
+      <p class="service-description">Acrylic (plain) at Beauty All Day. Booking secures your slot; the service cost is settled at the salon.</p>
+      <a href="beautyallday-booking.html" class="book-now-pulse" style="text-decoration:none;">Book now</a>
+  </div>
+  <div class="service-row" data-category="nails" style="display:none;" onclick="toggleDropdown('beautyallday-acrylicdesign')" style="cursor:pointer;">
+      <div><p class="service-name">Acrylic (with design)</p><p class="service-price">R250</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="beautyallday-acrylicdesign" data-category="nails">
+      <div class="info-pills">
+          <span class="info-pill">⏱ 45–75 min</span>
+          <span class="info-pill">💰 R250</span>
+      </div>
+      <p class="service-description">Acrylic (with design) at Beauty All Day. Booking secures your slot; the service cost is settled at the salon.</p>
+      <a href="beautyallday-booking.html" class="book-now-pulse" style="text-decoration:none;">Book now</a>
+  </div>
+  <div class="service-row" data-category="nails" style="display:none;" onclick="toggleDropdown('beautyallday-polygel')" style="cursor:pointer;">
+      <div><p class="service-name">Polygel</p><p class="service-price">R200</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="beautyallday-polygel" data-category="nails">
+      <div class="info-pills">
+          <span class="info-pill">⏱ 45–75 min</span>
+          <span class="info-pill">💰 R200</span>
+      </div>
+      <p class="service-description">Polygel at Beauty All Day. Booking secures your slot; the service cost is settled at the salon.</p>
+      <a href="beautyallday-booking.html" class="book-now-pulse" style="text-decoration:none;">Book now</a>
+  </div>
+  <div class="service-row" data-category="nails" style="display:none;" onclick="toggleDropdown('beautyallday-pedicure')" style="cursor:pointer;">
+      <div><p class="service-name">Pedicure</p><p class="service-price">R130</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="beautyallday-pedicure" data-category="nails">
+      <div class="info-pills">
+          <span class="info-pill">⏱ 45–75 min</span>
+          <span class="info-pill">💰 R130</span>
+      </div>
+      <p class="service-description">Pedicure at Beauty All Day. Booking secures your slot; the service cost is settled at the salon.</p>
+      <a href="beautyallday-booking.html" class="book-now-pulse" style="text-decoration:none;">Book now</a>
+  </div>
+  <div class="service-row" data-category="nails" style="display:none;" onclick="toggleDropdown('beautyallday-soakoffgel')" style="cursor:pointer;">
+      <div><p class="service-name">Soak off (gel)</p><p class="service-price">R50</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="beautyallday-soakoffgel" data-category="nails">
+      <div class="info-pills">
+          <span class="info-pill">⏱ 45–75 min</span>
+          <span class="info-pill">💰 R50</span>
+      </div>
+      <p class="service-description">Soak off (gel) at Beauty All Day. Booking secures your slot; the service cost is settled at the salon.</p>
+      <a href="beautyallday-booking.html" class="book-now-pulse" style="text-decoration:none;">Book now</a>
+  </div>
+  <div class="service-row" data-category="nails" style="display:none;" onclick="toggleDropdown('beautyallday-soakoffacrylic')" style="cursor:pointer;">
+      <div><p class="service-name">Soak off (acrylic)</p><p class="service-price">R70</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="beautyallday-soakoffacrylic" data-category="nails">
+      <div class="info-pills">
+          <span class="info-pill">⏱ 45–75 min</span>
+          <span class="info-pill">💰 R70</span>
+      </div>
+      <p class="service-description">Soak off (acrylic) at Beauty All Day. Booking secures your slot; the service cost is settled at the salon.</p>
+      <a href="beautyallday-booking.html" class="book-now-pulse" style="text-decoration:none;">Book now</a>
+  </div>
+  <div class="service-row" data-category="nails" style="display:none;" onclick="toggleDropdown('beautyallday-footscrub')" style="cursor:pointer;">
+      <div><p class="service-name">Foot scrub</p><p class="service-price">R200</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="beautyallday-footscrub" data-category="nails">
+      <div class="info-pills">
+          <span class="info-pill">⏱ 45–75 min</span>
+          <span class="info-pill">💰 R200</span>
+      </div>
+      <p class="service-description">Foot scrub at Beauty All Day. Booking secures your slot; the service cost is settled at the salon.</p>
+      <a href="beautyallday-booking.html" class="book-now-pulse" style="text-decoration:none;">Book now</a>
+  </div>
+  <div class="service-row" data-category="lashes" style="display:none;" onclick="toggleDropdown('beautyallday-clusterlashes')" style="cursor:pointer;">
+      <div><p class="service-name">Cluster lashes</p><p class="service-price">R180</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="beautyallday-clusterlashes" data-category="lashes">
+      <div class="info-pills">
+          <span class="info-pill">⏱ 45–90 min</span>
+          <span class="info-pill">💰 R180</span>
+      </div>
+      <p class="service-description">Cluster lashes at Beauty All Day. Booking secures your slot; the service cost is settled at the salon.</p>
+      <a href="beautyallday-booking.html" class="book-now-pulse" style="text-decoration:none;">Book now</a>
+  </div>
+  <div class="service-row" data-category="lashes" style="display:none;" onclick="toggleDropdown('beautyallday-individuals')" style="cursor:pointer;">
+      <div><p class="service-name">Individuals</p><p class="service-price">R280</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="beautyallday-individuals" data-category="lashes">
+      <div class="info-pills">
+          <span class="info-pill">⏱ 45–90 min</span>
+          <span class="info-pill">💰 R280</span>
+      </div>
+      <p class="service-description">Individuals at Beauty All Day. Booking secures your slot; the service cost is settled at the salon.</p>
+      <a href="beautyallday-booking.html" class="book-now-pulse" style="text-decoration:none;">Book now</a>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <p>Yisu &middot; Pure.Curated.Beauty &middot; 2026</p>
+</footer>
+
+<script src="script.js"></script>
+<script>
+  document.querySelectorAll('.tab').forEach(function (tab) {
+    tab.addEventListener('click', function () {
+      document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+      const category = tab.getAttribute('data-category');
+      document.querySelectorAll('.service-row, .service-dropdown').forEach(function (row) {
+        row.style.display = row.getAttribute('data-category') === category ? '' : 'none';
+        row.classList.remove('open');
+      });
+    });
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Beauty all day Nail Bar — Yisu Beauty</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section class="salon-hero">
+       <img class="salon-logo" src="images/BADL.jpg" alt="Mama Jane Beauty all day logo"> 
+  <a href="index.html" class="back-link">&larr; Home</a>
+  <h1>Beauty all day Nail Bar</h1>
+  <p class="salon-address">Second Floor, in Shoprite, Boulders Shopping Centre, Old Pretoria Rd, Midrand, 1682</p>
+  <div class="hero-actions">
+    <a href="BADNB-booking.html" class="btn-primary" style="text-decoration:none;">Book appointment</a>
+    <a href="BADNB-bundles.html" class="btn-secondary">Bundle packages</a>
+    <a href="BADNB-gallery.html" class="btn-secondary">Gallery / Inspo</a>
+  </div>
+</section>
+
+<div class="category-tabs">
+  <button class="tab active" data-category="braiding">Braiding</button>
+  <button class="tab" data-category="nails">Nails</button>
+  <button class="tab" data-category="lashes">Eyelash</button>
+  <button class="tab" data-category="body">Body &amp; treatments</button>
+  <button class="tab" data-category="makeup">Makeup</button>
+</div>
+
+
+
+<div class="service-section" id="serviceList">
+
+  <div class="service-row" data-category="braiding" onclick="toggleDropdown('singles-dropdown')" style="cursor:pointer;">
+      <div><p class="service-name">Singles</p><p class="service-price">From R400</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="singles-dropdown" data-category="braiding">
+      <div class="service-detail-images">
+          <img src="images/singles1.jpg" alt="Singles example 1">
+          <img src="images/singles2.jpg" alt="Singles example 2">
+          <img src="images/single-box.jpg" alt="Singles example 3">
+      </div>
+      <div class="info-pills">
+          <span class="info-pill">⏱ 3–5 hours</span>
+          <span class="info-pill">💰 From R400</span>
+      </div>
+      <p class="service-description">
+          Fine, individual braids for a versatile, natural-looking style that can be worn straight down, in updos, or half-up. Duration depends on hair length and thickness.
+      </p>
+       <a href="beautyallday-booking.html" class="btn-primary" style="text-decoration:none;">Book appointment</a>
+  </div>
+
+  <div class="service-row" data-category="braiding" onclick="toggleDropdown('straightback-dropdown')" style="cursor:pointer;">
+      <div><p class="service-name">Straight back with hair piece</p><p class="service-price">From R200</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="straightback-dropdown" data-category="braiding">
+      <div class="service-detail-images">
+          <img src="images/straightback1.jpg" alt="Straight back example 1">
+          <img src="images/straightback2.jpg" alt="Straight back example 2">
+          <img src="images/straightback4.jpg" alt="Straight back example 3">
+      </div>
+      <div class="info-pills">
+          <span class="info-pill">⏱ 1.5–2.5 hours</span>
+          <span class="info-pill">💰 From R200</span>
+      </div>
+      <p class="service-description">
+          Sleek cornrows braided straight back, finished with a hairpiece for added length and volume. A neat, low-maintenance style that's easy to manage day to day.
+      </p>
+       <a href="beautyallday-booking.html" class="btn-primary" style="text-decoration:none;">Book appointment</a>
+  </div>
+
+  <div class="service-row" data-category="braiding" onclick="toggleDropdown('hairinstall-dropdown')" style="cursor:pointer;">
+      <div><p class="service-name">Hair installation</p><p class="service-price">From R250</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="hairinstall-dropdown" data-category="braiding">
+      <div class="service-detail-images">
+          <img src="images/installation1.jpg" alt="Hair installation example 1">
+          <img src="images/installation2.jpg" alt="Hair installation example 2">
+          <img src="images/installation3.jpg" alt="Hair installation example 3">
+      </div>
+      <div class="info-pills">
+          <span class="info-pill">⏱ 1.5–2 hours</span>
+          <span class="info-pill">💰 From R250</span>
+      </div>
+      <p class="service-description">
+          Secure, comfortable installation of your wig or hairpiece using a technique suited to your hairline and hair type, for a natural, long-lasting fit.
+      </p>
+      <a href="beautyallday-booking.html" class="btn-primary" style="text-decoration:none;">Book appointment</a>
+  </div>
+
+  <div class="service-row" data-category="braiding" onclick="toggleDropdown('dreadlocking-dropdown')" style="cursor:pointer;">
+      <div><p class="service-name">Dreadlocking</p><p class="service-price">From R600</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="dreadlocking-dropdown" data-category="braiding">
+      <div class="service-detail-images">
+          <img src="images/dreadlock1.jpg" alt="Dreadlocking example 1">
+          <img src="images/dreadlock2.jpg" alt="Dreadlocking example 2">
+          <img src="images/dreadlock3.jpg" alt="Dreadlocking example 3">
+      </div>
+      <div class="info-pills">
+          <span class="info-pill">⏱ 3–5 hours</span>
+          <span class="info-pill">💰 From R600</span>
+      </div>
+      <p class="service-description">
+          Starting or maintaining your locs with a technique suited to your hair texture. A lasting, low-maintenance style that develops thickness and character over time.
+      </p>
+      <a href="beautyallday-booking.html" class="btn-primary" style="text-decoration:none;">Book appointment</a>
+  </div>
+
+
+
+
+
+  
+  <div class="service-row" data-category="nails" style="display:none;" onclick="toggleDropdown('soakoff-dropdown')" style="cursor:pointer;">
+      <div><p class="service-name">Soak off</p><p class="service-price">From R50</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="soakoff-dropdown" data-category="nails">
+      <div class="service-detail-images">
+          <img src="images/soakoff.jpg" alt="Soak off example 1">
+          
+      </div>
+      <div class="info-pills">
+          <span class="info-pill">⏱ 15–20 min</span>
+          <span class="info-pill">💰 From R50</span>
+      </div>
+      <p class="service-description">
+          Gentle removal of gel or acrylic without damaging the natural nail underneath — a quick, essential step before your next set.
+      </p>
+      <a href="beautyallday-booking.html" class="btn-primary" style="text-decoration:none;">Book appointment</a>
+  </div>
+
+  <div class="service-row" data-category="nails" style="display:none;" onclick="toggleDropdown('tips-dropdown')" style="cursor:pointer;">
+      <div><p class="service-name">Tips</p><p class="service-price">From R180</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="tips-dropdown" data-category="nails">
+      <div class="service-detail-images">
+          <img src="images/tips1.jpg" alt="Tips example 1">
+          <img src="images/tips2.jpg" alt="Tips example 2">
+          <img src="images/tips3.jpg" alt="Tips example 3">
+      </div>
+      <div class="info-pills">
+          <span class="info-pill">⏱ 45–60 min</span>
+          <span class="info-pill">💰 From R180</span>
+      </div>
+      <p class="service-description">
+          Nail tip extensions applied and shaped to your preferred length, giving instant added length before your gel or polish finish.
+      </p>
+      <a href="beautyallday-booking.html" class="btn-primary" style="text-decoration:none;">Book appointment</a>
+  </div>
+
+  <div class="service-row" data-category="nails" style="display:none;" onclick="toggleDropdown('manigelish-dropdown')" style="cursor:pointer;">
+      <div><p class="service-name">Mani (gelish)</p><p class="service-price">From R310</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="manigelish-dropdown" data-category="nails">
+      <div class="service-detail-images">
+          <img src="images/mani1.jpg" alt="Gelish mani example 1">
+          <img src="images/mani2.jpg" alt="Gelish mani example 2">
+          <img src="images/mani3.jpg" alt="Gelish mani example 3">
+      </div>
+      <div class="info-pills">
+          <span class="info-pill">⏱ 45–60 min</span>
+          <span class="info-pill">💰 From R310</span>
+      </div>
+      <p class="service-description">
+          A full gelish manicure with long-lasting, chip-resistant colour and a glossy salon finish that holds for weeks.
+      </p>
+      <a href="beautyallday-booking.html" class="btn-primary" style="text-decoration:none;">Book appointment</a>
+  </div>
+
+  <div class="service-row" data-category="nails" style="display:none;" onclick="toggleDropdown('pedigelish-dropdown')" style="cursor:pointer;">
+      <div><p class="service-name">Pedi (gelish)</p><p class="service-price">From R120</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="pedigelish-dropdown" data-category="nails">
+      <div class="service-detail-images">
+          <img src="images/pedi1.jpg" alt="Gelish pedi example 1">
+          <img src="images/pedi2.jpg" alt="Gelish pedi example 2">
+          <img src="images/pedi3.jpg" alt="Gelish pedi example 3">
+      </div>
+      <div class="info-pills">
+          <span class="info-pill">⏱ 45–60 min</span>
+          <span class="info-pill">💰 From R120</span>
+      </div>
+      <p class="service-description">
+          A relaxing gelish pedicure finished with long-lasting polish, leaving feet soft, smooth, and freshly groomed.
+      </p>
+      <a href="beautyallday-booking.html" class="btn-primary" style="text-decoration:none;">Book appointment</a>
+  </div>
+
+  <div class="service-row" data-category="nails" style="display:none;" onclick="toggleDropdown('polygel-dropdown')" style="cursor:pointer;">
+      <div><p class="service-name">Polygel</p><p class="service-price">From R250</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="polygel-dropdown" data-category="nails">
+      <div class="service-detail-images">
+          <img src="images/poly1.jpg" alt="Polygel example 1">
+          <img src="images/poly2.jpg" alt="Polygel example 2">
+          <img src="images/poly3.jpg" alt="Polygel example 3">
+      </div>
+      <div class="info-pills">
+          <span class="info-pill">⏱ 60–75 min</span>
+          <span class="info-pill">💰 From R250</span>
+      </div>
+      <p class="service-description">
+          A lightweight, durable polygel overlay for strong, natural-looking nails with a smooth, flexible finish.
+      </p>
+      <a href="beautyallday-booking.html" class="btn-primary" style="text-decoration:none;">Book appointment</a>
+  </div>
+
+  <div class="service-row" data-category="nails" style="display:none;" onclick="toggleDropdown('acrylic-dropdown')" style="cursor:pointer;">
+      <div><p class="service-name">Acrylic</p><p class="service-price">From R200</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="acrylic-dropdown" data-category="nails">
+      <div class="service-detail-images">
+          <img src="images/acrylic1.jpg" alt="Acrylic example 1">
+          <img src="images/acrylic2.jpg" alt="Acrylic example 2">
+          <img src="images/acrylic3.jpg" alt="Acrylic example 3">
+      </div>
+      <div class="info-pills">
+          <span class="info-pill">⏱ 60–75 min</span>
+          <span class="info-pill">💰 From R200</span>
+      </div>
+      <p class="service-description">
+          Classic acrylic nail extensions built up and shaped to your desired length, ready for polish or nail art.
+      </p>
+      <a href="beautyallday-booking.html" class="btn-primary" style="text-decoration:none;">Book appointment</a>
+  </div>
+
+  <div class="service-row" data-category="lashes" style="display:none;" onclick="toggleDropdown('lashcluster-dropdown')" style="cursor:pointer;">
+      <div><p class="service-name">Cluster</p><p class="service-price">From R150</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="lashcluster-dropdown" data-category="lashes">
+      <div class="service-detail-images">
+          <img src="images/cluster1.jpg" alt="Cluster lash example 1">
+          <img src="images/cluster2.jpg" alt="Cluster lash example 2">
+          <img src="images/cluster3.jpg" alt="Cluster lash example 3">
+      </div>
+      <div class="info-pills">
+          <span class="info-pill">⏱ 45–60 min</span>
+          <span class="info-pill">💰 From R150</span>
+      </div>
+      <p class="service-description">
+          Pre-made lash fans applied in small clusters for a fuller lash line without the time of full individual extensions.
+      </p>
+      <a href="beautyallday-booking.html" class="btn-primary" style="text-decoration:none;">Book appointment</a>
+  </div>
+
+  <div class="service-row" data-category="lashes" style="display:none;" onclick="toggleDropdown('lashindividual-dropdown')" style="cursor:pointer;">
+      <div><p class="service-name">Individual</p><p class="service-price">From R250</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="lashindividual-dropdown" data-category="lashes">
+      <div class="service-detail-images">
+          <img src="images/indi1.jpg" alt="Individual lash example 1">
+          <img src="images/indi2.jpg" alt="Individual lash example 2">
+          <img src="images/indi3.jpg" alt="Individual lash example 3">
+      </div>
+      <div class="info-pills">
+          <span class="info-pill">⏱ 90–120 min</span>
+          <span class="info-pill">💰 From R250</span>
+      </div>
+      <p class="service-description">
+          Individual lash extensions applied one by one for a natural, customisable look with fine control over volume and length.
+      </p>
+      <a href="beautyallday-booking.html" class="btn-primary" style="text-decoration:none;">Book appointment</a>
+  </div>
+
+  <div class="service-row" data-category="lashes" style="display:none;" onclick="toggleDropdown('lashtint-dropdown')" style="cursor:pointer;">
+      <div><p class="service-name">Tint</p><p class="service-price">From R100</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="lashtint-dropdown" data-category="lashes">
+      <div class="service-detail-images">
+          <img src="images/tint1.jpg" alt="Lash tint example 1">
+          <img src="images/tint2.jpg" alt="Lash tint example 2">
+          <img src="images/tint3.jpg" alt="Lash tint example 3">
+      </div>
+      <div class="info-pills">
+          <span class="info-pill">⏱ 20–30 min</span>
+          <span class="info-pill">💰 From R100</span>
+      </div>
+      <p class="service-description">
+          A semi-permanent lash tint for darker, more defined lashes without daily mascara — great for a natural, low-effort look.
+      </p>
+      <a href="beautyallday-booking.html" class="btn-primary" style="text-decoration:none;">Book appointment</a>
+  </div>
+
+  <div class="service-row" data-category="lashes" style="display:none;" onclick="toggleDropdown('microblading-dropdown')" style="cursor:pointer;">
+      <div><p class="service-name">Microblading</p><p class="service-price">From R600</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="microblading-dropdown" data-category="lashes">
+      <div class="service-detail-images">
+          <img src="images/micorblading1.jpg" alt="Microblading example 1">
+          <img src="images/micorblading2.jpg" alt="Microblading example 2">
+          <img src="images/microblading3.jpg" alt="Microblading example 3">
+      </div>
+      <div class="info-pills">
+          <span class="info-pill">⏱ 2–2.5 hours</span>
+          <span class="info-pill">💰 From R600</span>
+      </div>
+      <p class="service-description">
+          A semi-permanent brow technique using fine, hair-like strokes for natural, fuller-looking eyebrows that last several months.
+      </p>
+      <a href="beautyallday-booking.html" class="btn-primary" style="text-decoration:none;">Book appointment</a>
+  </div>
+
+  <div class="service-row" data-category="body" style="display:none;" onclick="toggleDropdown('footscrub-dropdown')" style="cursor:pointer;">
+      <div><p class="service-name">Foot scrub</p><p class="service-price">From R250</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="footscrub-dropdown" data-category="body">
+      <div class="service-detail-images">
+          <img src="images/scrub1.jpg" alt="Foot scrub example 1">
+          <img src="images/scrub2.jpg" alt="Foot scrub example 2">
+          <img src="images/scrub3.jpg" alt="Foot scrub example 3">
+      </div>
+      <div class="info-pills">
+          <span class="info-pill">⏱ 30–40 min</span>
+          <span class="info-pill">💰 From R250</span>
+      </div>
+      <p class="service-description">
+          An exfoliating foot treatment to smooth rough skin and soften calluses, leaving feet refreshed and renewed.
+      </p>
+      <a href="beautyallday-booking.html" class="btn-primary" style="text-decoration:none;">Book appointment</a>
+  </div>
+
+  <div class="service-row" data-category="body" style="display:none;" onclick="toggleDropdown('darklovely-dropdown')" style="cursor:pointer;">
+      <div><p class="service-name">Dark and Lovely</p><p class="service-price">From R200</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="darklovely-dropdown" data-category="body">
+      <div class="service-detail-images">
+          <img src="images/darkandlovely.jpg" alt="Dark and Lovely example 1">
+          
+      </div>
+      <div class="info-pills">
+          <span class="info-pill">⏱ 40–50 min</span>
+          <span class="info-pill">💰 From R200</span>
+      </div>
+      <p class="service-description">
+          A nourishing Dark and Lovely hair treatment for smoother, more manageable hair with added shine.
+      </p>
+      <a href="beautyallday-booking.html" class="btn-primary" style="text-decoration:none;">Book appointment</a>
+  </div>
+
+  <div class="service-row" data-category="body" style="display:none;" onclick="toggleDropdown('restore-dropdown')" style="cursor:pointer;">
+      <div><p class="service-name">Restore</p><p class="service-price">From R100</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="restore-dropdown" data-category="body">
+     <!--<div class="service-detail-images">-->
+          <!--<img src="images/allday-restore-1.jpg" alt="Restore example 1">
+         
+      </div>-->
+      <div class="info-pills">
+          <span class="info-pill">⏱ 30 min</span>
+          <span class="info-pill">💰 From R100</span>
+      </div>
+      <p class="service-description">
+          A restorative treatment aimed at repairing dry or damaged hair, bringing back softness and strength.
+      </p>
+      <a href="beautyallday-booking.html" class="btn-primary" style="text-decoration:none;">Book appointment</a>
+  </div>
+
+  <div class="service-row" data-category="body" style="display:none;" onclick="toggleDropdown('softfree-dropdown')" style="cursor:pointer;">
+      <div><p class="service-name">Soft and Free</p><p class="service-price">From R100</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="softfree-dropdown" data-category="body">
+      <div class="service-detail-images">
+          <img src="images/softandfree1.jpg" alt="Soft and Free example 1">
+        
+      </div>
+      <div class="info-pills">
+          <span class="info-pill">⏱ 30 min</span>
+          <span class="info-pill">💰 From R100</span>
+      </div>
+      <p class="service-description">
+          A Soft and Free treatment for silky, manageable hair with a natural sheen, leaving hair easier to style.
+      </p>
+      <a href="mamajane-allday-booking.html" class="btn-primary" style="text-decoration:none;">Book appointment</a>
+  </div>
+
+  <div class="service-row" data-category="makeup" style="display:none;" onclick="toggleDropdown('makeup-dropdown')" style="cursor:pointer;">
+      <div><p class="service-name">Makeup</p><p class="service-price">From R250</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="makeup-dropdown" data-category="makeup">
+      <div class="service-detail-images">
+          <img src="images/makeup1.jpg" alt="Makeup example 1">
+          <img src="images/makeup2.jpg" alt="Makeup example 2">
+          <img src="images/makeup3.jpg" alt="Makeup example 3">
+      </div>
+      <div class="info-pills">
+          <span class="info-pill">⏱ 45–60 min</span>
+          <span class="info-pill">💰 From R250</span>
+      </div>
+      <p class="service-description">
+          Full makeup application tailored to your occasion, from a natural everyday look to a bolder glam finish.
+      </p>
+      <a href="beautyallday-booking.html" class="btn-primary" style="text-decoration:none;">Book appointment</a>
+  </div>
+
+<script src="script.js"></script>
+<script>
+  document.querySelectorAll('.tab').forEach(function (tab) {
+    tab.addEventListener('click', function () {
+      document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+      const category = tab.getAttribute('data-category');
+      document.querySelectorAll('.service-row, .service-dropdown').forEach(function (row) {
+        row.style.display = row.getAttribute('data-category') === category ? '' : 'none';
+        row.classList.remove('open');
+      });
+    });
+  });
+</script>
+
+</body>
+</html>

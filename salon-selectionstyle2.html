@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Selection style star 2 — SilkyTouch</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section class="salon-hero">
+       <img class="salon-logo" src="images/SSSL.jpg" alt="Selection style star 2 logo"> 
+  <a href="index.html" class="back-link">&larr; Home</a>
+  <h1>Selection style star 2</h1>
+  <p class="salon-address">China Town Midrand Mall, Entrance 3, Old Pretoria Rd, Halfway House Estate, Midrand, 1685</p>
+  <div class="hero-actions">
+    <a href="selectionstyle2-booking.html" class="btn-primary" style="text-decoration:none;">Book appointment</a>
+    <a href="selectionstyle2-bundles.html" class="btn-secondary">Bundle packages</a>
+    <a href="selectionstyle2-gallery.html" class="btn-secondary">Gallery / Inspo</a>
+  </div>
+</section>
+
+<div class="category-tabs">
+  <button class="tab active" data-category="nails">Nails</button>
+  <button class="tab" data-category="lashes">Lashes</button>
+  <button class="tab" data-category="braiding">Braiding</button>
+</div>
+
+<div class="service-section" id="serviceList">
+
+  <div class="service-row" data-category="nails" onclick="toggleDropdown('tipsgel-dropdown')" style="cursor:pointer;">
+      <div><p class="service-name">Tips and gel</p><p class="service-price">R150</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="tipsgel-dropdown" data-category="nails">
+      <div class="service-detail-images">
+          <img src="images/tips1.jpg" alt="Tips and gel">
+          <img src="images/tips2.jpg" alt="Tips and gel">
+          <img src="images/tips3.jpg" alt="Tips and gel">
+      </div>
+      <div class="info-pills">
+          <span class="info-pill">⏱ 45–60 min</span>
+          <span class="info-pill">💰 R150</span>
+      </div>
+      <p class="service-description">
+          Nail tips applied with a gel overlay for added length and a smooth, durable finish.
+      </p>
+      <a href="selectionstyle2-booking.html" class="btn-primary" style="text-decoration:none;">Book appointment</a>
+  </div>
+
+  <div class="service-row" data-category="nails" onclick="toggleDropdown('acrylicplain-dropdown')" style="cursor:pointer;">
+      <div><p class="service-name">Acrylic (plain)</p><p class="service-price">R200</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="acrylicplain-dropdown" data-category="nails">
+      <div class="service-detail-images">
+          <img src="images/acrylicshort.jpg" alt="Acrylic plain">
+          <img src="images/hard1.jpg" alt="Acrylic plain">
+          <img src="images/hard2.jpg" alt="Acrylic plain example 3">
+      </div>
+      <div class="info-pills">
+          <span class="info-pill">⏱ 60 min</span>
+          <span class="info-pill">💰 R200</span>
+      </div>
+      <p class="service-description">
+          Classic plain acrylic nails built to your desired length and shape, ready for your own polish or nail art.
+      </p>
+      <a href="selectionstyle2-booking.html" class="btn-primary" style="text-decoration:none;">Book appointment</a>
+  </div>
+
+  <div class="service-row" data-category="nails" onclick="toggleDropdown('acrylicdesign-dropdown')" style="cursor:pointer;">
+      <div><p class="service-name">Acrylic (with design)</p><p class="service-price">R250</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="acrylicdesign-dropdown" data-category="nails">
+      <div class="service-detail-images">
+          <img src="images/acrylic1.jpg" alt="Acrylic with design">
+          <img src="images/acrylic2.jpg" alt="Acrylic with design">
+          <img src="images/acrylic3.jpg" alt="Acrylic with design">
+      </div>
+      <div class="info-pills">
+          <span class="info-pill">⏱ 75–90 min</span>
+          <span class="info-pill">💰 R250</span>
+      </div>
+      <p class="service-description">
+          Acrylic nails finished with custom nail art, from simple accents to detailed hand-painted designs.
+      </p>
+      <a href="selectionstyle2-booking.html" class="btn-primary" style="text-decoration:none;">Book appointment</a>
+  </div>
+
+  <div class="service-row" data-category="nails" onclick="toggleDropdown('polygelsel-dropdown')" style="cursor:pointer;">
+      <div><p class="service-name">Polygel</p><p class="service-price">R200</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="polygelsel-dropdown" data-category="nails">
+      <div class="service-detail-images">
+          <img src="images/poly1.jpg" alt="Polygel">
+          <img src="images/poly2.jpg" alt="Polygel">
+          <img src="images/poly3.jpg" alt="Polygel">
+      </div>
+      <div class="info-pills">
+          <span class="info-pill">⏱ 60–75 min</span>
+          <span class="info-pill">💰 R200</span>
+      </div>
+      <p class="service-description">
+          A lightweight, flexible polygel overlay for strong, natural-looking nails with a smooth finish.
+      </p>
+      <a href="selectionstyle2-booking.html" class="btn-primary" style="text-decoration:none;">Book appointment</a>
+  </div>
+
+  <div class="service-row" data-category="nails" onclick="toggleDropdown('pedicure-dropdown')" style="cursor:pointer;">
+      <div><p class="service-name">Pedicure</p><p class="service-price">R130</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="pedicure-dropdown" data-category="nails">
+      <div class="service-detail-images">
+          <img src="images/pedi1.jpg" alt="Pedicure">
+          <img src="images/pedi2.jpg" alt="Pedicure">
+          <img src="images/pedi3.jpg" alt="Pedicure">
+      </div>
+      <div class="info-pills">
+          <span class="info-pill">⏱ 40–50 min</span>
+          <span class="info-pill">💰 R130</span>
+      </div>
+      <p class="service-description">
+          A relaxing pedicure with nail shaping, cuticle care, and polish for soft, well-groomed feet.
+      </p>
+      <a href="selectionstyle2-booking.html" class="btn-primary" style="text-decoration:none;">Book appointment</a>
+  </div>
+
+  <div class="service-row" data-category="nails" onclick="toggleDropdown('soakoffgel-dropdown')" style="cursor:pointer;">
+      <div><p class="service-name">Soak off (gel)</p><p class="service-price">R50</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="soakoffgel-dropdown" data-category="nails">
+      <div class="service-detail-images">
+          <img src="images/soakoff.jpg" alt="Soak off gel">
+         
+      </div>
+      <div class="info-pills">
+          <span class="info-pill">⏱ 15–20 min</span>
+          <span class="info-pill">💰 R50</span>
+      </div>
+      <p class="service-description">
+          Gentle removal of gel polish or overlay without damaging the natural nail underneath.
+      </p>
+      <a href="selectionstyle2-booking.html" class="btn-primary" style="text-decoration:none;">Book appointment</a>
+  </div>
+
+  <div class="service-row" data-category="nails" onclick="toggleDropdown('soakoffacrylic-dropdown')" style="cursor:pointer;">
+      <div><p class="service-name">Soak off (acrylic)</p><p class="service-price">R70</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="soakoffacrylic-dropdown" data-category="nails">
+      <!--<div class="service-detail-images">
+          <img src="images/selection-soakoffacrylic-1.jpg" alt="Soak off acrylic example 1">
+          <img src="images/selection-soakoffacrylic-2.jpg" alt="Soak off acrylic example 2">
+          <img src="images/selection-soakoffacrylic-3.jpg" alt="Soak off acrylic example 3">
+      </div>-->
+      <div class="info-pills">
+          <span class="info-pill">⏱ 20–25 min</span>
+          <span class="info-pill">💰 R70</span>
+      </div>
+      <p class="service-description">
+          Careful removal of acrylic nails to protect the natural nail bed underneath, ready for your next set.
+      </p>
+      <a href="selectionstyle2-booking.html" class="btn-primary" style="text-decoration:none;">Book appointment</a>
+  </div>
+
+  <div class="service-row" data-category="nails" onclick="toggleDropdown('footscrubsel-dropdown')" style="cursor:pointer;">
+      <div><p class="service-name">Foot scrub</p><p class="service-price">R200</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="footscrubsel-dropdown" data-category="nails">
+      <div class="service-detail-images">
+          <img src="images/scrub1.jpg" alt="Foot scrub">
+          <!--<img src="images/selection-footscrub-2.jpg" alt="Foot scrub example 2">
+          <img src="images/selection-footscrub-3.jpg" alt="Foot scrub example 3">
+      --> </div>
+      <div class="info-pills">
+          <span class="info-pill">⏱ 30–40 min</span>
+          <span class="info-pill">💰 R200</span>
+      </div>
+      <p class="service-description">
+          An exfoliating foot treatment to smooth rough skin and soften calluses, leaving feet refreshed.
+      </p>
+      <a href="selectionstyle2-booking.html" class="btn-primary" style="text-decoration:none;">Book appointment</a>
+  </div>
+
+  <div class="service-row" data-category="lashes" style="display:none;" onclick="toggleDropdown('clusterlashsel-dropdown')" style="cursor:pointer;">
+      <div><p class="service-name">Cluster lashes</p><p class="service-price">R180</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="clusterlashsel-dropdown" data-category="lashes">
+      <div class="service-detail-images">
+          <img src="images/cluster1.jpg" alt="Cluster lashes">
+          <img src="images/cluster2.jpg" alt="Cluster lashes">
+          <img src="images/cluster3.jpg" alt="Cluster lashes">
+      </div>
+      <div class="info-pills">
+          <span class="info-pill">⏱ 45–60 min</span>
+          <span class="info-pill">💰 R180</span>
+      </div>
+      <p class="service-description">
+          Pre-made lash fans for a fuller lash line without the time commitment of full individual extensions.
+      </p>
+      <a href="selectionstyle2-booking.html" class="btn-primary" style="text-decoration:none;">Book appointment</a>
+  </div>
+
+  <div class="service-row" data-category="lashes" style="display:none;" onclick="toggleDropdown('individualssel-dropdown')" style="cursor:pointer;">
+      <div><p class="service-name">Individuals</p><p class="service-price">R280</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="individualssel-dropdown" data-category="lashes">
+      <div class="service-detail-images">
+          <img src="images/indi1.jpg" alt="Individual lashes">
+          <img src="images/indi2.jpg" alt="Individual lashes">
+          <img src="images/indi3.jpg" alt="Individual lashes">
+      </div>
+      <div class="info-pills">
+          <span class="info-pill">⏱ 90–120 min</span>
+          <span class="info-pill">💰 R280</span>
+      </div>
+      <p class="service-description">
+          Individual lash extensions applied one by one for a natural, fully customisable look.
+      </p>
+      <a href="selectionstyle2-booking.html" class="btn-primary" style="text-decoration:none;">Book appointment</a>
+  </div>
+
+  <div class="service-row" data-category="braiding" style="display:none;" onclick="toggleDropdown('freehands-dropdown')" style="cursor:pointer;">
+      <div><p class="service-name">Freehands</p><p class="service-price">R150</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="freehands-dropdown" data-category="braiding">
+      <div class="service-detail-images">
+          <img src="images/freehand 1.jpg" alt="Freehands example 1">
+          <img src="images/corn1.jpg" alt="Freehands example 2">
+          <img src="images/corn2.jpg" alt="Freehands example 3">
+      </div>
+      <div class="info-pills">
+          <span class="info-pill">⏱ 2–3 hours</span>
+          <span class="info-pill">💰 R150</span>
+      </div>
+      <p class="service-description">
+          A neat freehand braiding style done without hair extensions, using your natural hair for a lightweight, everyday look.
+      </p>
+      <a href="selectionstyle2-booking.html" class="btn-primary" style="text-decoration:none;">Book appointment</a>
+  </div>
+
+  <div class="service-row" data-category="braiding" style="display:none;" onclick="toggleDropdown('straightupsel-dropdown')" style="cursor:pointer;">
+      <div><p class="service-name">Straight up</p><p class="service-price">R350</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="straightupsel-dropdown" data-category="braiding">
+      <div class="service-detail-images">
+          <img src="images/straightup1.jpg" alt="Straight up example 1">
+          <img src="images/straightup2.jpg" alt="Straight up example 2">
+          <img src="images/straightup3.jpg" alt="Straight up example 3">
+      </div>
+      <div class="info-pills">
+          <span class="info-pill">⏱ 3–4 hours</span>
+          <span class="info-pill">💰 R350</span>
+      </div>
+      <p class="service-description">
+          Braids styled straight upward for a bold, clean look that keeps hair off the face and neck.
+      </p>
+      <a href="selectionstyle2-booking.html" class="btn-primary" style="text-decoration:none;">Book appointment</a>
+  </div>
+
+  <div class="service-row" data-category="braiding" style="display:none;" onclick="toggleDropdown('straightbacksel-dropdown')" style="cursor:pointer;">
+      <div><p class="service-name">Straight back</p><p class="service-price">R300</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="straightbacksel-dropdown" data-category="braiding">
+      <div class="service-detail-images">
+          <img src="images/straightback1.jpg" alt="Straight back example 1">
+          <img src="images/straightback2.jpg" alt="Straight back example 2">
+          <img src="images/straightback4.jpg" alt="Straight back example 3">
+      </div>
+      <div class="info-pills">
+          <span class="info-pill">⏱ 2–3 hours</span>
+          <span class="info-pill">💰 R300</span>
+      </div>
+      <p class="service-description">
+          Sleek cornrows braided straight back for a neat, low-maintenance style that's easy to manage.
+      </p>
+      <a href="selectionstyle2-booking.html" class="btn-primary" style="text-decoration:none;">Book appointment</a>
+  </div>
+
+  <div class="service-row" data-category="braiding" style="display:none;" onclick="toggleDropdown('knotlesssel-dropdown')" style="cursor:pointer;">
+      <div><p class="service-name">Knotless (includes hairpiece)</p><p class="service-price">R700</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="knotlesssel-dropdown" data-category="braiding">
+      <div class="service-detail-images">
+          <img src="images/knotless1.jpg" alt="Knotless example 1">
+          <img src="images/knotless2.jpg" alt="Knotless example 2">
+          <img src="images/knotless3.jpg" alt="Knotless example 3">
+      </div>
+      <div class="info-pills">
+          <span class="info-pill">⏱ 4–5 hours</span>
+          <span class="info-pill">💰 R700</span>
+      </div>
+      <p class="service-description">
+          A neat, natural-looking knotless braid style with hairpiece included, comfortable at the root with a smooth, polished finish.
+      </p>
+      <a href="selectionstyle2-booking.html" class="btn-primary" style="text-decoration:none;">Book appointment</a>
+  </div>
+
+  <div class="service-row" data-category="braiding" style="display:none;" onclick="toggleDropdown('treatmentsel-dropdown')" style="cursor:pointer;">
+      <div><p class="service-name">Treatment</p><p class="service-price">R120</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="treatmentsel-dropdown" data-category="braiding">
+      <!--<div class="service-detail-images">
+          <img src="images/selection-treatment-1.jpg" alt="Treatment example 1">
+          <img src="images/selection-treatment-2.jpg" alt="Treatment example 2">
+          <img src="images/selection-treatment-3.jpg" alt="Treatment example 3">
+      </div>-->
+      <div class="info-pills">
+          <span class="info-pill">⏱ 30–40 min</span>
+          <span class="info-pill">💰 R120</span>
+      </div>
+      <p class="service-description">
+          A nourishing hair treatment to restore moisture and softness before or after a braiding style.
+      </p>
+      <a href="selectionstyle2-booking.html" class="btn-primary" style="text-decoration:none;">Book appointment</a>
+  </div>
+
+  <div class="service-row" data-category="braiding" style="display:none;" onclick="toggleDropdown('twostepssel-dropdown')" style="cursor:pointer;">
+      <div><p class="service-name">Two steps</p><p class="service-price">R500</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="twostepssel-dropdown" data-category="braiding">
+      <div class="service-detail-images">
+          <img src="images/2-step-braids 1.jpg" alt="Two steps example 1">
+          <img src="images/2-step-braids 2.jpg" alt="Two steps example 2">
+          <img src="images/twostepshort1.jpg" alt="Two steps example 3">
+      </div>
+      <div class="info-pills">
+          <span class="info-pill">⏱ 3–4 hours</span>
+          <span class="info-pill">💰 R500</span>
+      </div>
+      <p class="service-description">
+          A two-step braiding technique combining texture and length for a distinctive, layered finish.
+      </p>
+      <a href="selectionstyle2-booking.html" class="btn-primary" style="text-decoration:none;">Book appointment</a>
+  </div>
+
+
+
+<script src="script.js"></script>
+<script>
+  document.querySelectorAll('.tab').forEach(function (tab) {
+    tab.addEventListener('click', function () {
+      document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+      const category = tab.getAttribute('data-category');
+      document.querySelectorAll('.service-row, .service-dropdown').forEach(function (row) {
+        row.style.display = row.getAttribute('data-category') === category ? '' : 'none';
+        row.classList.remove('open');
+      });
+    });
+  });
+</script>
+
+</body>
+</html>

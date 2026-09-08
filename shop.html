@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shop — Yisu Beauty</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section class="salon-hero">
+     <img class="salon-logo" src="images/mizani.jpg" alt="shop"> 
+  <a href="index.html" class="back-link">&larr; All salons</a>
+  <h1>Shop products</h1>
+  <p class="salon-address">Hair and beauty products from across the SilkyTouch network</p>
+</section>
+
+<div class="category-tabs">
+ <button class="tab active" data-salon="all">All salons</button>
+  <button class="tab" data-salon="Yisu Beauty">Yisu Beauty</button>
+  <button class="tab" data-salon="mamajane-beauty">Mama Jane Beauty salon</button>
+  <button class="tab" data-salon="Beauty All Day">Beauty all day </button>
+  <button class="tab" data-salon="STB">Silky Touch Braiders</button>
+  <button class="tab" data-salon="selectionstyle">Selection Style Star </button>
+  <button class="tab" data-salon="BADN">Beauty all day Nail Bar</button>
+  <button class="tab" data-salon="barbers">Silky Touch Barbers</button>
+  <button class="tab" data-salon="selectionstyle2">Selection style star 2</button>
+  
+  
+</div>
+
+
+<div class="shop-list" id="shopList">
+
+  <!--Yisu Beauty-->
+  <div class="product-card"  data-salon="Yisu Beauty">
+    <div class="product-row" onclick="toggleDropdown('product-1-details')">
+      <img class="product-image" src="images/shea.jpg" alt="Product 1">
+      <div class="product-info">
+        <p class="product-name">Shea Butter treatment</p>
+        <p class="product-price">R100</p>
+        <span class="product-salon-tag">Yisu Beauty</span>
+      </div>
+      <span class="dropdown-toggle">Details</span>
+    </div>
+    <div class="product-details" id="product-1-details">
+      <p class="product-description">Product description coming soon.</p>
+      <button class="purchase-pulse">Purchase now</button>
+    </div>
+  </div>
+
+  <div class="product-card" data-salon="Yisu Beauty">
+    <div class="product-row" onclick="toggleDropdown('product-3-details')">
+      <img class="product-image" src="images/chapter.jpeg" alt="Product 2">
+      <div class="product-info">
+        <p class="product-name">Chambers Chapter 2000</p>
+        <p class="product-price">R100</p>
+        <span class="product-salon-tag">Yisu Beauty</span>
+      </div>
+      <span class="dropdown-toggle">Details</span>
+    </div>
+    <div class="product-details" id="product-3-details">
+      <p class="product-description">Product description coming soon.</p>
+      <button class="purchase-pulse">Purchase now</button>
+    </div>
+  </div>
+
+  <div class="product-card" data-salon="Yisu Beauty">
+    <div class="product-row" onclick="toggleDropdown('product-2-details')">
+      <img class="product-image" src="images/mercy.jpeg" alt="Product 3">
+      <div class="product-info">
+        <p class="product-name">Mercy Ointment</p>
+        <p class="product-price">R100</p>
+        <span class="product-salon-tag">Yisu Beauty</span>
+      </div>
+      <span class="dropdown-toggle">Details</span>
+    </div>
+    <div class="product-details" id="product-2-details">
+      <p class="product-description">Product description coming soon.</p>
+      <button class="purchase-pulse">Purchase now</button>
+    </div>
+  </div>
+
+
+  <!--Mama Jane Beauty-->
+  <div class="product-card" data-salon="mamajane-beauty">
+    <div class="product-row" onclick="toggleDropdown('product-1-details')">
+      <img class="product-image" src="images/shea.jpg" alt="Product 4">
+      <div class="product-info">
+        <p class="product-name">Shea Butter</p>
+        <p class="product-price">R100</p>
+        <span class="product-salon-tag">Mama Jane Beauty</span>
+      </div>
+      <span class="dropdown-toggle">Details</span>
+    </div>
+    <div class="product-details" id="product-1-details">
+      <p class="product-description">Product description coming soon.</p>
+      <button class="purchase-pulse">Purchase now</button>
+    </div>
+  </div>
+
+  <div class="product-card" data-salon="mamajane-beauty">
+    <div class="product-row" onclick="toggleDropdown('product-2-details')">
+      <img class="product-image" src="images/mercy.jpeg" alt="Product 5">
+      <div class="product-info">
+        <p class="product-name">Mercy Ointment</p>
+        <p class="product-price">R100</p>
+        <span class="product-salon-tag">Mama Jane Beauty</span>
+      </div>
+      <span class="dropdown-toggle">Details</span>
+    </div>
+    <div class="product-details" id="product-2-details">
+      <p class="product-description">Product description coming soon.</p>
+      <button class="purchase-pulse">Purchase now</button>
+    </div>
+  </div>
+  
+  <div class="product-card" data-salon="mamajane-beauty">
+    <div class="product-row" onclick="toggleDropdown('product-2-details')">
+      <img class="product-image" src="images/chapter.jpeg" alt="Product 6">
+      <div class="product-info">
+        <p class="product-name">Chambers Chapter 2000</p>
+        <p class="product-price">R100</p>
+        <span class="product-salon-tag">Mama Jane Beauty</span>
+      </div>
+      <span class="dropdown-toggle">Details</span>
+    </div>
+    <div class="product-details" id="product-2-details">
+      <p class="product-description">Product description coming soon.</p>
+      <button class="purchase-pulse">Purchase now</button>
+    </div>
+  </div>
+
+ 
+
+ <!--Silky Touch Braiders-->
+
+  <div class="product-card" data-salon="STB">
+    <div class="product-row" onclick="toggleDropdown('product-1-details')">
+      <img class="product-image" src="images/shea.jpg" alt="Product 4">
+      <div class="product-info">
+        <p class="product-name">Shea Butter</p>
+        <p class="product-price">R100</p>
+        <span class="product-salon-tag">Silky Touch Braiders</span>
+      </div>
+      <span class="dropdown-toggle">Details</span>
+    </div>
+    <div class="product-details" id="product-1-details">
+      <p class="product-description">Product description coming soon.</p>
+      <button class="purchase-pulse">Purchase now</button>
+    </div>
+  </div>
+
+  <div class="product-card" data-salon="STB">
+    <div class="product-row" onclick="toggleDropdown('product-2-details')">
+      <img class="product-image" src="images/mercy.jpeg" alt="Product 5">
+      <div class="product-info">
+        <p class="product-name">Mercy Ointment</p>
+        <p class="product-price">R100</p>
+        <span class="product-salon-tag">Silky Touch Braiders</span>
+      </div>
+      <span class="dropdown-toggle">Details</span>
+    </div>
+    <div class="product-details" id="product-2-details">
+      <p class="product-description">Product description coming soon.</p>
+      <button class="purchase-pulse">Purchase now</button>
+    </div>
+  </div>
+  
+  <div class="product-card" data-salon="STB">
+    <div class="product-row" onclick="toggleDropdown('product-2-details')">
+      <img class="product-image" src="images/chapter.jpeg" alt="Product 6">
+      <div class="product-info">
+        <p class="product-name">Chambers Chapter 2000</p>
+        <p class="product-price">R100</p>
+        <span class="product-salon-tag">Silky Touch Braiders</span>
+      </div>
+      <span class="dropdown-toggle">Details</span>
+    </div>
+    <div class="product-details" id="product-2-details">
+      <p class="product-description">Product description coming soon.</p>
+      <button class="purchase-pulse">Purchase now</button>
+    </div>
+  </div>
+
+ 
+
+<!--Beauty All Day-->
+
+ <div class="product-card" data-salon="Beauty All Day">
+    <div class="product-row" onclick="toggleDropdown('product-1-details')">
+      <img class="product-image" src="images/shea.jpg" alt="Product 4">
+      <div class="product-info">
+        <p class="product-name">Shea Butter</p>
+        <p class="product-price">R100</p>
+        <span class="product-salon-tag">Beauty All Day</span>
+      </div>
+      <span class="dropdown-toggle">Details</span>
+    </div>
+    <div class="product-details" id="product-1-details">
+      <p class="product-description">Product description coming soon.</p>
+      <button class="purchase-pulse">Purchase now</button>
+    </div>
+  </div>
+
+  <div class="product-card" data-salon="Beauty All Day">
+    <div class="product-row" onclick="toggleDropdown('product-2-details')">
+      <img class="product-image" src="images/mercy.jpeg" alt="Product 5">
+      <div class="product-info">
+        <p class="product-name">Mercy Ointment</p>
+        <p class="product-price">R100</p>
+        <span class="product-salon-tag">Beauty All Day</span>
+      </div>
+      <span class="dropdown-toggle">Details</span>
+    </div>
+    <div class="product-details" id="product-2-details">
+      <p class="product-description">Product description coming soon.</p>
+      <button class="purchase-pulse">Purchase now</button>
+    </div>
+  </div>
+  
+  <div class="product-card" data-salon="Beauty All Day">
+    <div class="product-row" onclick="toggleDropdown('product-2-details')">
+      <img class="product-image" src="images/chapter.jpeg" alt="Product 6">
+      <div class="product-info">
+        <p class="product-name">Chambers Chapter 2000</p>
+        <p class="product-price">R100</p>
+        <span class="product-salon-tag">Beauty All Day</span>
+      </div>
+      <span class="dropdown-toggle">Details</span>
+    </div>
+    <div class="product-details" id="product-2-details">
+      <p class="product-description">Product description coming soon.</p>
+      <button class="purchase-pulse">Purchase now</button>
+    </div>
+  </div>
+
+  
+
+  <!--Selection Style Star-->
+   <div class="product-card" data-salon="selectionstyle">
+    <div class="product-row" onclick="toggleDropdown('product-1-details')">
+      <img class="product-image" src="images/shea.jpg" alt="Product 4">
+      <div class="product-info">
+        <p class="product-name">Shea Butter</p>
+        <p class="product-price">R100</p>
+        <span class="product-salon-tag">Selection Style Star</span>
+      </div>
+      <span class="dropdown-toggle">Details</span>
+    </div>
+    <div class="product-details" id="product-1-details">
+      <p class="product-description">Product description coming soon.</p>
+      <button class="purchase-pulse">Purchase now</button>
+    </div>
+  </div>
+
+  <div class="product-card" data-salon="selectionstyle">
+    <div class="product-row" onclick="toggleDropdown('product-2-details')">
+      <img class="product-image" src="images/mercy.jpeg" alt="Product 5">
+      <div class="product-info">
+        <p class="product-name">Mercy Ointment</p>
+        <p class="product-price">R100</p>
+        <span class="product-salon-tag">Selection Style Star</span>
+      </div>
+      <span class="dropdown-toggle">Details</span>
+    </div>
+    <div class="product-details" id="product-2-details">
+      <p class="product-description">Product description coming soon.</p>
+      <button class="purchase-pulse">Purchase now</button>
+    </div>
+  </div>
+  
+  <div class="product-card" data-salon="selectionstyle">
+    <div class="product-row" onclick="toggleDropdown('product-2-details')">
+      <img class="product-image" src="images/chapter.jpeg" alt="Product 6">
+      <div class="product-info">
+        <p class="product-name">Chambers Chapter 2000</p>
+        <p class="product-price">R100</p>
+        <span class="product-salon-tag">Selection Style Star</span>
+      </div>
+      <span class="dropdown-toggle">Details</span>
+    </div>
+    <div class="product-details" id="product-2-details">
+      <p class="product-description">Product description coming soon.</p>
+      <button class="purchase-pulse">Purchase now</button>
+    </div>
+  </div>
+
+  
+
+  <!--STB-->
+  <div class="product-card" data-salon="barbers">
+    <div class="product-row" onclick="toggleDropdown('product-3-details')">
+      <img class="product-image" src="images/chapter.jpeg" alt="Product 8">
+      <div class="product-info">
+        <p class="product-name">Chambers Chapter 2000</p>
+        <p class="product-price">R100</p>
+        <span class="product-salon-tag">Silky Touch Barbers</span>
+      </div>
+      <span class="dropdown-toggle">Details</span>
+    </div>
+    <div class="product-details" id="product-3-details">
+      <p class="product-description">Product description coming soon.</p>
+      <button class="purchase-pulse">Purchase now</button>
+    </div>
+  </div>
+
+  <div class="product-card" data-salon="barbers">
+    <div class="product-row" onclick="toggleDropdown('product-2-details')">
+      <img class="product-image" src="images/mercy.jpeg" alt="Product 7">
+      <div class="product-info">
+        <p class="product-name">Mercy Ointment</p>
+        <p class="product-price">R100</p>
+        <span class="product-salon-tag">Silky Touch Barbers</span>
+      </div>
+      <span class="dropdown-toggle">Details</span>
+    </div>
+    <div class="product-details" id="product-2-details">
+      <p class="product-description">Product description coming soon.</p>
+      <button class="purchase-pulse">Purchase now</button>
+    </div>
+  </div>
+
+  <div class="product-card" data-salon="barbers">
+    <div class="product-row" onclick="toggleDropdown('product-2-details')">
+      <img class="product-image" src="images/shea.jpg" alt="Product 7">
+      <div class="product-info">
+        <p class="product-name">Shea Butter</p>
+        <p class="product-price">R100</p>
+        <span class="product-salon-tag">Silky Touch Barbers</span>
+      </div>
+      <span class="dropdown-toggle">Details</span>
+    </div>
+    <div class="product-details" id="product-2-details">
+      <p class="product-description">Product description coming soon.</p>
+      <button class="purchase-pulse">Purchase now</button>
+    </div>
+  </div>
+
+  <!--Beauty All Day Nail Bar-->
+  <div class="product-card" data-salon="BADN">
+    <div class="product-row" onclick="toggleDropdown('product-3-details')">
+      <img class="product-image" src="images/chapter.jpeg" alt="Product 8">
+      <div class="product-info">
+        <p class="product-name">Chambers Chapter 2000</p>
+        <p class="product-price">R100</p>
+        <span class="product-salon-tag">Silky Touch Barbers</span>
+      </div>
+      <span class="dropdown-toggle">Details</span>
+    </div>
+    <div class="product-details" id="product-3-details">
+      <p class="product-description">Product description coming soon.</p>
+      <button class="purchase-pulse">Purchase now</button>
+    </div>
+  </div>
+
+  <div class="product-card" data-salon="BADN">
+    <div class="product-row" onclick="toggleDropdown('product-2-details')">
+      <img class="product-image" src="images/mercy.jpeg" alt="Product 7">
+      <div class="product-info">
+        <p class="product-name">Mercy Ointment</p>
+        <p class="product-price">R100</p>
+        <span class="product-salon-tag">Silky Touch Barbers</span>
+      </div>
+      <span class="dropdown-toggle">Details</span>
+    </div>
+    <div class="product-details" id="product-2-details">
+      <p class="product-description">Product description coming soon.</p>
+      <button class="purchase-pulse">Purchase now</button>
+    </div>
+  </div>
+
+  <div class="product-card" data-salon="BADN">
+    <div class="product-row" onclick="toggleDropdown('product-2-details')">
+      <img class="product-image" src="images/shea.jpg" alt="Product 7">
+      <div class="product-info">
+        <p class="product-name">Shea Butter</p>
+        <p class="product-price">R100</p>
+        <span class="product-salon-tag">Silky Touch Barbers</span>
+      </div>
+      <span class="dropdown-toggle">Details</span>
+    </div>
+    <div class="product-details" id="product-2-details">
+      <p class="product-description">Product description coming soon.</p>
+      <button class="purchase-pulse">Purchase now</button>
+    </div>
+  </div>
+
+
+
+  <!--Selection Style2 -->
+  <div class="product-card"  data-salon="selectionstyle2">
+    <div class="product-row" onclick="toggleDropdown('product-1-details')">
+      <img class="product-image" src="images/shea.jpg" alt="Product 1">
+      <div class="product-info">
+        <p class="product-name">Shea Butter treatment</p>
+        <p class="product-price">R100</p>
+        <span class="product-salon-tag">Selection Style Star 2 </span>
+      </div>
+      <span class="dropdown-toggle">Details</span>
+    </div>
+    <div class="product-details" id="product-1-details">
+      <p class="product-description">Product description coming soon.</p>
+      <button class="purchase-pulse">Purchase now</button>
+    </div>
+  </div>
+
+  <div class="product-card" data-salon="selectionstyle2">
+    <div class="product-row" onclick="toggleDropdown('product-3-details')">
+      <img class="product-image" src="images/chapter.jpeg" alt="Product 2">
+      <div class="product-info">
+        <p class="product-name">Chambers Chapter 2000</p>
+        <p class="product-price">R100</p>
+        <span class="product-salon-tag">Selection Style Star 2</span>
+      </div>
+      <span class="dropdown-toggle">Details</span>
+    </div>
+    <div class="product-details" id="product-3-details">
+      <p class="product-description">Product description coming soon.</p>
+      <button class="purchase-pulse">Purchase now</button>
+    </div>
+  </div>
+
+  <div class="product-card" data-salon="selectionstyle2">
+    <div class="product-row" onclick="toggleDropdown('product-2-details')">
+      <img class="product-image" src="images/mercy.jpeg" alt="Product 3">
+      <div class="product-info">
+        <p class="product-name">Mercy Ointment</p>
+        <p class="product-price">R100</p>
+        <span class="product-salon-tag">Selection Style Star 2</span>
+      </div>
+      <span class="dropdown-toggle">Details</span>
+    </div>
+    <div class="product-details" id="product-2-details">
+      <p class="product-description">Product description coming soon.</p>
+      <button class="purchase-pulse">Purchase now</button>
+    </div>
+  </div>
+
+
+
+
+  <!---
+  <div class="product-card" data-salon="mamajane-beauty">
+    <div class="product-row" onclick="toggleDropdown('product-5-details')">
+      <img class="product-image" src="images/product-5.jpg" alt="Product 10">
+      <div class="product-info">
+        <p class="product-name">Fast Cooling Hair Treatment</p>
+        <p class="product-price">R100</p>
+        <span class="product-salon-tag">Mama Jane Beauty salon</span>
+      </div>
+      <span class="dropdown-toggle">Details</span>
+    </div>
+    <div class="product-details" id="product-5-details">
+      <p class="product-description">Product description coming soon.</p>
+      <button class="purchase-pulse">Purchase now</button>
+    </div>
+  </div>
+
+  <div class="product-card" data-salon="mamajane-allday">
+    <div class="product-row" onclick="toggleDropdown('product-6-details')">
+      <img class="product-image" src="images/product-6.jpg" alt="Product 11">
+      <div class="product-info">
+        <p class="product-name">Product name</p>
+        <p class="product-price">R100</p>
+        <span class="product-salon-tag">Mama Jane Beauty all day</span>
+      </div>
+      <span class="dropdown-toggle">Details</span>
+    </div>
+    <div class="product-details" id="product-6-details">
+      <p class="product-description">Product description coming soon.</p>
+      <button class="purchase-pulse">Purchase now</button>
+    </div>
+  </div>
+
+  <div class="product-card" data-salon="barbers">
+    <div class="product-row" onclick="toggleDropdown('product-7-details')">
+      <img class="product-image" src="images/product-7.jpg" alt="Product 12">
+      <div class="product-info">
+        <p class="product-name">Product name</p>
+        <p class="product-price">R100</p>
+        <span class="product-salon-tag">Silky Touch Barbers</span>
+      </div>
+      <span class="dropdown-toggle">Details</span>
+    </div>
+    <div class="product-details" id="product-7-details">
+      <p class="product-description">Product description coming soon.</p>
+      <button class="purchase-pulse">Purchase now</button>
+    </div>
+  </div>
+
+  <div class="product-card" data-salon="selectionstyle">
+    <div class="product-row" onclick="toggleDropdown('product-8-details')">
+      <img class="product-image" src="images/product-8.jpg" alt="Product 13">
+      <div class="product-info">
+        <p class="product-name">Product name</p>
+        <p class="product-price">R100</p>
+        <span class="product-salon-tag">Selection style star 2</span>
+      </div>
+      <span class="dropdown-toggle">Details</span>
+    </div>
+    <div class="product-details" id="product-8-details">
+      <p class="product-description">Product description coming soon.</p>
+      <button class="purchase-pulse">Purchase now</button>
+    </div>
+  </div>
+
+  <div class="product-card" data-salon="mamajane-beauty">
+    <div class="product-row" onclick="toggleDropdown('product-9-details')">
+      <img class="product-image" src="images/product-9.jpg" alt="Product 14">
+      <div class="product-info">
+        <p class="product-name">Product name</p>
+        <p class="product-price">R100</p>
+        <span class="product-salon-tag">Mama Jane Beauty salon</span>
+      </div>
+      <span class="dropdown-toggle">Details</span>
+    </div>
+    <div class="product-details" id="product-9-details">
+      <p class="product-description">Product description coming soon.</p>
+      <button class="purchase-pulse">Purchase now</button>
+    </div>
+  </div>
+
+  <div class="product-card" data-salon="mamajane-allday">
+    <div class="product-row" onclick="toggleDropdown('product-10-details')">
+      <img class="product-image" src="images/product-10.jpg" alt="Product 15>
+      <div class="product-info">
+        <p class="product-name">Product name</p>
+        <p class="product-price">R100</p>
+        <span class="product-salon-tag">Mama Jane Beauty all day</span>
+      </div>
+      <span class="dropdown-toggle">Details</span>
+    </div>
+    <div class="product-details" id="product-10-details">
+      <p class="product-description">Product description coming soon.</p>
+      <button class="purchase-pulse">Purchase now</button>
+    </div>
+  </div>
+
+  <div class="product-card" data-salon="barbers">
+    <div class="product-row" onclick="toggleDropdown('product-11-details')">
+      <img class="product-image" src="images/product-11.jpg" alt="Product 16">
+      <div class="product-info">
+        <p class="product-name">Product name</p>
+        <p class="product-price">R100</p>
+        <span class="product-salon-tag">Silky Touch Barbers</span>
+      </div>
+      <span class="dropdown-toggle">Details</span>
+    </div>
+    <div class="product-details" id="product-11-details">
+      <p class="product-description">Product description coming soon.</p>
+      <button class="purchase-pulse">Purchase now</button>
+    </div>
+  </div>
+
+  <div class="product-card" data-salon="selectionstyle">
+    <div class="product-row" onclick="toggleDropdown('product-12-details')">
+      <img class="product-image" src="images/product-12.jpg" alt="Product 17">
+      <div class="product-info">
+        <p class="product-name">Product name</p>
+        <p class="product-price">R100</p>
+        <span class="product-salon-tag">Selection style star 2</span>
+      </div>
+      <span class="dropdown-toggle">Details</span>
+    </div>
+    <div class="product-details" id="product-12-details">
+      <p class="product-description">Product description coming soon.</p>
+      <button class="purchase-pulse">Purchase now</button>
+    </div>
+  </div>
+
+  <div class="product-card" data-salon="mamajane-beauty">
+    <div class="product-row" onclick="toggleDropdown('product-13-details')">
+      <img class="product-image" src="images/product-13.jpg" alt="Product 18">
+      <div class="product-info">
+        <p class="product-name">Product name</p>
+        <p class="product-price">R100</p>
+        <span class="product-salon-tag">Mama Jane Beauty salon</span>
+      </div>
+      <span class="dropdown-toggle">Details</span>
+    </div>
+    <div class="product-details" id="product-13-details">
+      <p class="product-description">Product description coming soon.</p>
+      <button class="purchase-pulse">Purchase now</button>
+    </div>
+  </div>
+
+  <div class="product-card" data-salon="mamajane-allday">
+    <div class="product-row" onclick="toggleDropdown('product-14-details')">
+      <img class="product-image" src="images/product-14.jpg" alt="Product 19">
+      <div class="product-info">
+        <p class="product-name">Product name</p>
+        <p class="product-price">R100</p>
+        <span class="product-salon-tag">Mama Jane Beauty all day</span>
+      </div>
+      <span class="dropdown-toggle">Details</span>
+    </div>
+    <div class="product-details" id="product-14-details">
+      <p class="product-description">Product description coming soon.</p>
+      <button class="purchase-pulse">Purchase now</button>
+    </div>
+  </div>
+
+  <div class="product-card" data-salon="barbers">
+    <div class="product-row" onclick="toggleDropdown('product-15-details')">
+      <img class="product-image" src="images/product-15.jpg" alt="Product 20">
+      <div class="product-info">
+        <p class="product-name">Product name</p>
+        <p class="product-price">R100</p>
+        <span class="product-salon-tag">Silky Touch Barbers</span>
+      </div>
+      <span class="dropdown-toggle">Details</span>
+    </div>
+    <div class="product-details" id="product-15-details">
+      <p class="product-description">Product description coming soon.</p>
+      <button class="purchase-pulse">Purchase now</button>
+    </div>
+  </div>
+
+  <div class="product-card" data-salon="selectionstyle">
+    <div class="product-row" onclick="toggleDropdown('product-16-details')">
+      <img class="product-image" src="images/product-16.jpg" alt="Product 21">
+      <div class="product-info">
+        <p class="product-name">Product name</p>
+        <p class="product-price">R100</p>
+        <span class="product-salon-tag">Selection style star 2</span>
+      </div>
+      <span class="dropdown-toggle">Details</span>
+    </div>
+    <div class="product-details" id="product-16-details">
+      <p class="product-description">Product description coming soon.</p>
+      <button class="purchase-pulse">Purchase now</button>
+    </div>
+  </div>
+
+  <div class="product-card" data-salon="mamajane-beauty">
+    <div class="product-row" onclick="toggleDropdown('product-17-details')">
+      <img class="product-image" src="images/product-17.jpg" alt="Product 22">
+      <div class="product-info">
+        <p class="product-name">Product name</p>
+        <p class="product-price">R100</p>
+        <span class="product-salon-tag">Mama Jane Beauty salon</span>
+      </div>
+      <span class="dropdown-toggle">Details</span>
+    </div>
+    <div class="product-details" id="product-17-details">
+      <p class="product-description">Product description coming soon.</p>
+      <button class="purchase-pulse">Purchase now</button>
+    </div>
+  </div>
+
+  <div class="product-card" data-salon="mamajane-allday">
+    <div class="product-row" onclick="toggleDropdown('product-18-details')">
+      <img class="product-image" src="images/product-18.jpg" alt="Product 23">
+      <div class="product-info">
+        <p class="product-name">Product name</p>
+        <p class="product-price">R100</p>
+        <span class="product-salon-tag">Mama Jane Beauty all day</span>
+      </div>
+      <span class="dropdown-toggle">Details</span>
+    </div>
+    <div class="product-details" id="product-18-details">
+      <p class="product-description">Product description coming soon.</p>
+      <button class="purchase-pulse">Purchase now</button>
+    </div>
+  </div>
+
+  <div class="product-card" data-salon="barbers">
+    <div class="product-row" onclick="toggleDropdown('product-19-details')">
+      <img class="product-image" src="images/product-19.jpg" alt="Product 24">
+      <div class="product-info">
+        <p class="product-name">Product name</p>
+        <p class="product-price">R100</p>
+        <span class="product-salon-tag">Silky Touch Barbers</span>
+      </div>
+      <span class="dropdown-toggle">Details</span>
+    </div>
+    <div class="product-details" id="product-19-details">
+      <p class="product-description">Product description coming soon.</p>
+      <button class="purchase-pulse">Purchase now</button>
+    </div>
+  </div>
+
+  <div class="product-card" data-salon="selectionstyle">
+    <div class="product-row" onclick="toggleDropdown('product-20-details')">
+      <img class="product-image" src="images/product-20.jpg" alt="Product 25">
+      <div class="product-info">
+        <p class="product-name">Product name</p>
+        <p class="product-price">R100</p>
+        <span class="product-salon-tag">Selection style star 2</span>
+      </div>
+      <span class="dropdown-toggle">Details</span>
+    </div>
+    <div class="product-details" id="product-20-details">
+      <p class="product-description">Product description coming soon.</p>
+      <button class="purchase-pulse">Purchase now</button>
+    </div>
+  </div>
+
+  <div class="product-card" data-salon="mamajane-beauty">
+    <div class="product-row" onclick="toggleDropdown('product-21-details')">
+      <img class="product-image" src="images/product-21.jpg" alt="Product 26">
+      <div class="product-info">
+        <p class="product-name">Product name</p>
+        <p class="product-price">R100</p>
+        <span class="product-salon-tag">Mama Jane Beauty salon</span>
+      </div>
+      <span class="dropdown-toggle">Details</span>
+    </div>
+    <div class="product-details" id="product-21-details">
+      <p class="product-description">Product description coming soon.</p>
+      <button class="purchase-pulse">Purchase now</button>
+    </div>
+  </div>
+
+  <div class="product-card" data-salon="mamajane-allday">
+    <div class="product-row" onclick="toggleDropdown('product-22-details')">
+      <img class="product-image" src="images/product-22.jpg" alt="Product 27">
+      <div class="product-info">
+        <p class="product-name">Product name</p>
+        <p class="product-price">R100</p>
+        <span class="product-salon-tag">Mama Jane Beauty all day</span>
+      </div>
+      <span class="dropdown-toggle">Details</span>
+    </div>
+    <div class="product-details" id="product-22-details">
+      <p class="product-description">Product description coming soon.</p>
+      <button class="purchase-pulse">Purchase now</button>
+    </div>
+  </div>
+
+  <div class="product-card" data-salon="barbers">
+    <div class="product-row" onclick="toggleDropdown('product-23-details')">
+      <img class="product-image" src="images/product-23.jpg" alt="Product 28">
+      <div class="product-info">
+        <p class="product-name">Product name</p>
+        <p class="product-price">R100</p>
+        <span class="product-salon-tag">Silky Touch Barbers</span>
+      </div>
+      <span class="dropdown-toggle">Details</span>
+    </div>
+    <div class="product-details" id="product-23-details">
+      <p class="product-description">Product description coming soon.</p>
+      <button class="purchase-pulse">Purchase now</button>
+    </div>
+  </div>
+
+  <div class="product-card" data-salon="selectionstyle">
+    <div class="product-row" onclick="toggleDropdown('product-24-details')">
+      <img class="product-image" src="images/product-24.jpg" alt="Product 29">
+      <div class="product-info">
+        <p class="product-name">Product name</p>
+        <p class="product-price">R100</p>
+        <span class="product-salon-tag">Selection style star 2</span>
+      </div>
+      <span class="dropdown-toggle">Details</span>
+    </div>
+    <div class="product-details" id="product-24-details">
+      <p class="product-description">Product description coming soon.</p>
+      <button class="purchase-pulse">Purchase now</button>
+    </div>
+  </div>
+
+  <div class="product-card" data-salon="mamajane-beauty">
+    <div class="product-row" onclick="toggleDropdown('product-25-details')">
+      <img class="product-image" src="images/product-25.jpg" alt="Product 30">
+      <div class="product-info">
+        <p class="product-name">Product name</p>
+        <p class="product-price">R100</p>
+        <span class="product-salon-tag">Mama Jane Beauty salon</span>
+      </div>
+      <span class="dropdown-toggle">Details</span>
+    </div>
+    <div class="product-details" id="product-25-details">
+      <p class="product-description">Product description coming soon.</p>
+      <button class="purchase-pulse">Purchase now</button>
+    </div>
+  </div>
+
+  <div class="product-card" data-salon="mamajane-allday">
+    <div class="product-row" onclick="toggleDropdown('product-26-details')">
+      <img class="product-image" src="images/product-26.jpg" alt="Product 31">
+      <div class="product-info">
+        <p class="product-name">Product name</p>
+        <p class="product-price">R100</p>
+        <span class="product-salon-tag">Mama Jane Beauty all day</span>
+      </div>
+      <span class="dropdown-toggle">Details</span>
+    </div>
+    <div class="product-details" id="product-26-details">
+      <p class="product-description">Product description coming soon.</p>
+      <button class="purchase-pulse">Purchase now</button>
+    </div>
+  </div>
+
+  <div class="product-card" data-salon="barbers">
+    <div class="product-row" onclick="toggleDropdown('product-27-details')">
+      <img class="product-image" src="images/product-27.jpg" alt="Product 32">
+      <div class="product-info">
+        <p class="product-name">Product name</p>
+        <p class="product-price">R100</p>
+        <span class="product-salon-tag">Silky Touch Barbers</span>
+      </div>
+      <span class="dropdown-toggle">Details</span>
+    </div>
+    <div class="product-details" id="product-27-details">
+      <p class="product-description">Product description coming soon.</p>
+      <button class="purchase-pulse">Purchase now</button>
+    </div>
+  </div>
+
+  <div class="product-card" data-salon="selectionstyle">
+    <div class="product-row" onclick="toggleDropdown('product-28-details')">
+      <img class="product-image" src="images/product-28.jpg" alt="Product 33">
+      <div class="product-info">
+        <p class="product-name">Product name</p>
+        <p class="product-price">R100</p>
+        <span class="product-salon-tag">Selection style star 2</span>
+      </div>
+      <span class="dropdown-toggle">Details</span>
+    </div>
+    <div class="product-details" id="product-28-details">
+      <p class="product-description">Product description coming soon.</p>
+      <button class="purchase-pulse">Purchase now</button>
+    </div>
+  </div>
+
+  <div class="product-card" data-salon="mamajane-beauty">
+    <div class="product-row" onclick="toggleDropdown('product-29-details')">
+      <img class="product-image" src="images/product-29.jpg" alt="Product 34">
+      <div class="product-info">
+        <p class="product-name">Product name</p>
+        <p class="product-price">R100</p>
+        <span class="product-salon-tag">Mama Jane Beauty salon</span>
+      </div>
+      <span class="dropdown-toggle">Details</span>
+    </div>
+    <div class="product-details" id="product-34-details">
+      <p class="product-description">Product description coming soon.</p>
+      <button class="purchase-pulse">Purchase now</button>
+    </div>
+  </div>
+
+  <div class="product-card" data-salon="mamajane-allday">
+    <div class="product-row" onclick="toggleDropdown('product-30-details')">
+      <img class="product-image" src="images/product-30.jpg" alt="Product 35">
+      <div class="product-info">
+        <p class="product-name">Product name</p>
+        <p class="product-price">R100</p>
+        <span class="product-salon-tag">Mama Jane Beauty all day</span>
+      </div>
+      <span class="dropdown-toggle">Details</span>
+    </div>
+    <div class="product-details" id="product-35-details">
+      <p class="product-description">Product description coming soon.</p>
+      <button class="purchase-pulse">Purchase now</button>
+    </div>
+  </div>
+
+</div>
+-->
+
+
+<script src="script.js"></script>
+<script>
+  document.querySelectorAll('.tab').forEach(function (tab) {
+    tab.addEventListener('click', function () {
+      document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+      const salon = tab.getAttribute('data-salon');
+      document.querySelectorAll('.product-card').forEach(function (card) {
+        card.style.display = (salon === 'all' || card.getAttribute('data-salon') === salon) ? 'block' : 'none';
+      });
+    });
+  });
+</script>
+
+</body>
+</html>

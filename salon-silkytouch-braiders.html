@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Silky Touch Braiders — Yisu</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500&family=Jost:wght@200;300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section class="salon-hero">
+    <img class="salon-logo" src="images/STBL.jpg" alt="Mama Jane Beauty all day logo"> 
+  <a href="index.html" class="back-link">&larr; Home</a>
+  <h1>Silky Touch Braiders</h1>
+  <p class="salon-address">Boulders Shopping Centre, Old Pretoria &amp; Tonetti St, Rds, Midrand, 1682</p>
+  <div class="hero-actions">
+    <a href="STbraiders-booking.html" class="btn-primary" style="text-decoration:none;">Book appointment</a>
+    <a href="STbraiders-bundles.html" class="btn-secondary">Bundle packages</a>
+    <a href="STbraiders-gallery.html" class="btn-secondary">Gallery / Inspo</a>
+  </div>
+</section>
+
+<div class="category-tabs">
+  <button class="tab active" data-category="braiding">Braiding</button>
+  <button class="tab" data-category="nails">Nails</button>
+</div>
+
+<div class="service-section" id="serviceList">
+  <div class="service-row" data-category="braiding" onclick="toggleDropdown('silkytouch-braiders-freehands')" style="cursor:pointer;">
+      <div><p class="service-name">Freehands</p><p class="service-price">R150</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="silkytouch-braiders-freehands" data-category="braiding">
+      <div class="info-pills">
+          <span class="info-pill">⏱ 2–5 hours</span>
+          <span class="info-pill">💰 R150</span>
+      </div>
+      <p class="service-description">Freehands at Silky Touch Braiders. Booking secures your slot; the service cost is settled at the salon.</p>
+      <a href="silkytouch-braiders-booking.html" class="book-now-pulse" style="text-decoration:none;">Book now</a>
+  </div>
+  <div class="service-row" data-category="braiding" onclick="toggleDropdown('silkytouch-braiders-straightup')" style="cursor:pointer;">
+      <div><p class="service-name">Straight up</p><p class="service-price">R350</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="silkytouch-braiders-straightup" data-category="braiding">
+      <div class="info-pills">
+          <span class="info-pill">⏱ 2–5 hours</span>
+          <span class="info-pill">💰 R350</span>
+      </div>
+      <p class="service-description">Straight up at Silky Touch Braiders. Booking secures your slot; the service cost is settled at the salon.</p>
+      <a href="silkytouch-braiders-booking.html" class="book-now-pulse" style="text-decoration:none;">Book now</a>
+  </div>
+  <div class="service-row" data-category="braiding" onclick="toggleDropdown('silkytouch-braiders-straightback')" style="cursor:pointer;">
+      <div><p class="service-name">Straight back</p><p class="service-price">R300</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="silkytouch-braiders-straightback" data-category="braiding">
+      <div class="info-pills">
+          <span class="info-pill">⏱ 2–5 hours</span>
+          <span class="info-pill">💰 R300</span>
+      </div>
+      <p class="service-description">Straight back at Silky Touch Braiders. Booking secures your slot; the service cost is settled at the salon.</p>
+      <a href="silkytouch-braiders-booking.html" class="book-now-pulse" style="text-decoration:none;">Book now</a>
+  </div>
+  <div class="service-row" data-category="braiding" onclick="toggleDropdown('silkytouch-braiders-knotless')" style="cursor:pointer;">
+      <div><p class="service-name">Knotless (includes hairpiece)</p><p class="service-price">R700</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="silkytouch-braiders-knotless" data-category="braiding">
+      <div class="info-pills">
+          <span class="info-pill">⏱ 2–5 hours</span>
+          <span class="info-pill">💰 R700</span>
+      </div>
+      <p class="service-description">Knotless (includes hairpiece) at Silky Touch Braiders. Booking secures your slot; the service cost is settled at the salon.</p>
+      <a href="silkytouch-braiders-booking.html" class="book-now-pulse" style="text-decoration:none;">Book now</a>
+  </div>
+  <div class="service-row" data-category="braiding" onclick="toggleDropdown('silkytouch-braiders-treatment')" style="cursor:pointer;">
+      <div><p class="service-name">Treatment</p><p class="service-price">R120</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="silkytouch-braiders-treatment" data-category="braiding">
+      <div class="info-pills">
+          <span class="info-pill">⏱ 2–5 hours</span>
+          <span class="info-pill">💰 R120</span>
+      </div>
+      <p class="service-description">Treatment at Silky Touch Braiders. Booking secures your slot; the service cost is settled at the salon.</p>
+      <a href="silkytouch-braiders-booking.html" class="book-now-pulse" style="text-decoration:none;">Book now</a>
+  </div>
+  <div class="service-row" data-category="braiding" onclick="toggleDropdown('silkytouch-braiders-twosteps')" style="cursor:pointer;">
+      <div><p class="service-name">Two steps</p><p class="service-price">R500</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="silkytouch-braiders-twosteps" data-category="braiding">
+      <div class="info-pills">
+          <span class="info-pill">⏱ 2–5 hours</span>
+          <span class="info-pill">💰 R500</span>
+      </div>
+      <p class="service-description">Two steps at Silky Touch Braiders. Booking secures your slot; the service cost is settled at the salon.</p>
+      <a href="silkytouch-braiders-booking.html" class="book-now-pulse" style="text-decoration:none;">Book now</a>
+  </div>
+  <div class="service-row" data-category="nails" style="display:none;" onclick="toggleDropdown('silkytouch-braiders-tipsgel')" style="cursor:pointer;">
+      <div><p class="service-name">Tips and gel</p><p class="service-price">R150</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="silkytouch-braiders-tipsgel" data-category="nails">
+      <div class="info-pills">
+          <span class="info-pill">⏱ 45–75 min</span>
+          <span class="info-pill">💰 R150</span>
+      </div>
+      <p class="service-description">Tips and gel at Silky Touch Braiders. Booking secures your slot; the service cost is settled at the salon.</p>
+      <a href="silkytouch-braiders-booking.html" class="book-now-pulse" style="text-decoration:none;">Book now</a>
+  </div>
+  <div class="service-row" data-category="nails" style="display:none;" onclick="toggleDropdown('silkytouch-braiders-acrylicplain')" style="cursor:pointer;">
+      <div><p class="service-name">Acrylic (plain)</p><p class="service-price">R200</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="silkytouch-braiders-acrylicplain" data-category="nails">
+      <div class="info-pills">
+          <span class="info-pill">⏱ 45–75 min</span>
+          <span class="info-pill">💰 R200</span>
+      </div>
+      <p class="service-description">Acrylic (plain) at Silky Touch Braiders. Booking secures your slot; the service cost is settled at the salon.</p>
+      <a href="silkytouch-braiders-booking.html" class="book-now-pulse" style="text-decoration:none;">Book now</a>
+  </div>
+  <div class="service-row" data-category="nails" style="display:none;" onclick="toggleDropdown('silkytouch-braiders-acrylicdesign')" style="cursor:pointer;">
+      <div><p class="service-name">Acrylic (with design)</p><p class="service-price">R250</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="silkytouch-braiders-acrylicdesign" data-category="nails">
+      <div class="info-pills">
+          <span class="info-pill">⏱ 45–75 min</span>
+          <span class="info-pill">💰 R250</span>
+      </div>
+      <p class="service-description">Acrylic (with design) at Silky Touch Braiders. Booking secures your slot; the service cost is settled at the salon.</p>
+      <a href="silkytouch-braiders-booking.html" class="book-now-pulse" style="text-decoration:none;">Book now</a>
+  </div>
+  <div class="service-row" data-category="nails" style="display:none;" onclick="toggleDropdown('silkytouch-braiders-polygel')" style="cursor:pointer;">
+      <div><p class="service-name">Polygel</p><p class="service-price">R200</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="silkytouch-braiders-polygel" data-category="nails">
+      <div class="info-pills">
+          <span class="info-pill">⏱ 45–75 min</span>
+          <span class="info-pill">💰 R200</span>
+      </div>
+      <p class="service-description">Polygel at Silky Touch Braiders. Booking secures your slot; the service cost is settled at the salon.</p>
+      <a href="silkytouch-braiders-booking.html" class="book-now-pulse" style="text-decoration:none;">Book now</a>
+  </div>
+  <div class="service-row" data-category="nails" style="display:none;" onclick="toggleDropdown('silkytouch-braiders-pedicure')" style="cursor:pointer;">
+      <div><p class="service-name">Pedicure</p><p class="service-price">R130</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="silkytouch-braiders-pedicure" data-category="nails">
+      <div class="info-pills">
+          <span class="info-pill">⏱ 45–75 min</span>
+          <span class="info-pill">💰 R130</span>
+      </div>
+      <p class="service-description">Pedicure at Silky Touch Braiders. Booking secures your slot; the service cost is settled at the salon.</p>
+      <a href="silkytouch-braiders-booking.html" class="book-now-pulse" style="text-decoration:none;">Book now</a>
+  </div>
+  <div class="service-row" data-category="nails" style="display:none;" onclick="toggleDropdown('silkytouch-braiders-soakoffgel')" style="cursor:pointer;">
+      <div><p class="service-name">Soak off (gel)</p><p class="service-price">R50</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="silkytouch-braiders-soakoffgel" data-category="nails">
+      <div class="info-pills">
+          <span class="info-pill">⏱ 45–75 min</span>
+          <span class="info-pill">💰 R50</span>
+      </div>
+      <p class="service-description">Soak off (gel) at Silky Touch Braiders. Booking secures your slot; the service cost is settled at the salon.</p>
+      <a href="silkytouch-braiders-booking.html" class="book-now-pulse" style="text-decoration:none;">Book now</a>
+  </div>
+  <div class="service-row" data-category="nails" style="display:none;" onclick="toggleDropdown('silkytouch-braiders-soakoffacrylic')" style="cursor:pointer;">
+      <div><p class="service-name">Soak off (acrylic)</p><p class="service-price">R70</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="silkytouch-braiders-soakoffacrylic" data-category="nails">
+      <div class="info-pills">
+          <span class="info-pill">⏱ 45–75 min</span>
+          <span class="info-pill">💰 R70</span>
+      </div>
+      <p class="service-description">Soak off (acrylic) at Silky Touch Braiders. Booking secures your slot; the service cost is settled at the salon.</p>
+      <a href="silkytouch-braiders-booking.html" class="book-now-pulse" style="text-decoration:none;">Book now</a>
+  </div>
+  <div class="service-row" data-category="nails" style="display:none;" onclick="toggleDropdown('silkytouch-braiders-footscrub')" style="cursor:pointer;">
+      <div><p class="service-name">Foot scrub</p><p class="service-price">R200</p></div>
+      <span class="dropdown-toggle">Details</span>
+  </div>
+  <div class="service-dropdown" id="silkytouch-braiders-footscrub" data-category="nails">
+      <div class="info-pills">
+          <span class="info-pill">⏱ 45–75 min</span>
+          <span class="info-pill">💰 R200</span>
+      </div>
+      <p class="service-description">Foot scrub at Silky Touch Braiders. Booking secures your slot; the service cost is settled at the salon.</p>
+      <a href="silkytouch-braiders-booking.html" class="book-now-pulse" style="text-decoration:none;">Book now</a>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <p>Yisu &middot; Pure.Curated.Beauty &middot; 2026</p>
+</footer>
+
+<script src="script.js"></script>
+<script>
+  document.querySelectorAll('.tab').forEach(function (tab) {
+    tab.addEventListener('click', function () {
+      document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+      const category = tab.getAttribute('data-category');
+      document.querySelectorAll('.service-row, .service-dropdown').forEach(function (row) {
+        row.style.display = row.getAttribute('data-category') === category ? '' : 'none';
+        row.classList.remove('open');
+      });
+    });
+  });
+</script>
+
+</body>
+</html>
